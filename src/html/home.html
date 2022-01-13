@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+@@include('templates/head.html', {
+"seo-title": "Главная страница сайта",
+"seo-desc": "Главная страница сайта"
+
+})
+
+<body>
+	<header class="header">
+		<!-- лого  -->
+		<a href="#" class="logo">
+			<img class="logo__image" src="img/logo-rus.svg" alt="логотип" width="192" height="70" loading="lazy">
+		</a>
+
+		<!-- навигация  -->
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#" class="nav__link">Прайс-лист</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Поставщикам</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Авансирование</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Вакансии</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+			</ul>
+		</nav>
+
+		<ul class="user-list">
+			<li class="user-list__item"><a href="#" class="user-list__btn">English</a></li>
+			<li class="user-list__item"><a href="#" class="user-list__btn">Личный кабинет</a></li>
+		</ul>
+
+		<button class="header__menu-btn">Меню сайта</button>
+
+	</header>
+	<main class="main">
+		<!-- SEO заголовок страницы  -->
+		<h1 class="vis-hidden">Деметра трейдинг: закупка и экспорт
+			сельскохозяйственной продукции зерновой и масличной групп</h1>
+
+		<section class="hero">
+			<div class="wrapper">
+				<h2 class="hero__title">Поставщикам</h2>
+				<a href="#" class="btn">подробнее</a>
+
+				<ul class="hero__link-list">
+					<li class="hero__link-item"><a href="" class="hero__link">Скачать договор поставки и документы на
+							регистрацию</a></li>
+					<li class="hero__link-item"><a href="" class="hero__link">Регистрация поставщика</a></li>
+					<li class="hero__link-item"><a href="" class="hero__link">Карта партнера</a></li>
+				</ul>
+
+				<ul class="hero__btn-list">
+					<li class="hero__btn-item"><a href="" class="btn">Прайс-листы</a></li>
+					<li class="hero__btn-item"><a href="" class="btn">Авансирование</a></li>
+				</ul>
+
+				<div class="hero__scroll">
+					<span>Скрольте вниз</span>
+					<button class="btn">Прокрутить вниз</button>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="news content">
+			<div class="content__wrapper">
+				<div class="content__left">
+					<h2 class="title">Новости</h2>
+
+					<div class="news__list">
+						<article class="news-promo">
+							<img src="img/news/1.jpg" class="news-promo__img" alt="анонс новости" width="640" height="360"
+								loading="lazy">
+							<a href="#" class="news-promo__link">
+								<h3 class="news-promo__title">«Деметра Трейдинг» впервые экспортировал пшеницу в Алжир</h3>
+							</a>
+							<time class="news-promo__date" datetime="2021-10-20">20 октября 2021</time>
+						</article>
+					</div>
+
+					<div class="content__right">
+						<article class="news-promo">
+							<a href="#" class="news-promo__link">
+								<h3 class="news-promo__title">«Деметра Трейдинг» экспортировал рекордный объем пшеницы по итогам
+									сентября
+								</h3>
+							</a>
+							<time class="news-promo__date" datetime="2021-10-11">11 октября 2021</time>
+						</article>
+						<article class="news-promo">
+							<a href="#" class="news-promo__link">
+								<h3 class="news-promo__title">«Деметра Трейдинг» впервые экспортировала пшеницу в Саудовскую Аравию</h3>
+							</a>
+							<time class="news-promo__date" datetime="2021-08-11">18 августа 2021</time>
+						</article>
+
+						<a href="#" class="btn">Все новости</a>
+					</div>
+
+				</div>
+
+
+
+			</div>
+		</section>
+
+		<section class="promo">
+			<h2 class="vis-hidden">Сотрудничество и консультации</h2>
+			<ul class="promo__list">
+				<li class="promo__item">
+					<img src="img/promo/1.jpg" alt="фото" class="promo__img" width="920" height="576" loading="lazy">
+					<div class="promo__details">
+						<h3>Закупаем зерновые культуры</h3>
+						<p>Получить консультацию</p>
+						<a href="#" class="btn-round">Подробнее</a>
+					</div>
+				</li>
+				<li class="promo__item">
+					<img src="img/promo/2.jpg" alt="фото" class="promo__img" width="920" height="576" loading="lazy">
+					<div class="promo__details">
+						<h3>Пожалуйста, зарегистрируйтесь</h3>
+						<p>Стать поставщиком</p>
+						<a href="#" class="btn-round">Подробнее</a>
+					</div>
+				</li>
+			</ul>
+
+			</div>
+		</section>
+
+		<section class="content">
+			<ы class="content__wrapper">
+				<div class="content-left">
+					<span class="content__title">Деметра трейдинг</span>
+					<p class="content__subtile">Сотрудничаем с ведущими российскими производителями зерна, предоставляя им
+						возможность
+						выхода на мировой рынок.</p>
+				</div>
+
+				<div class="content-right">
+					<p class="content__text">Работая с нами, аграрии реализуют свою продукцию по самым выгодным ценам. Постоянно
+						наращиваем объемы отгрузки зерновых. Надежное партнерство как гарантия стабильных деловых отношений. Наши
+						опыт и
+						профессионализм гарантируют прозрачность и законность сделки любого уровня. Отрасль развивается, и мы
+						растем
+						вместе с ней.</p>
+					<p class="content__text">С 2014 года компания имеет успешный опыт работы на рынке зерна. За этот период
+						«Деметра Трейдинг»
+						своевременно и
+						в полном объеме поставила сельскохозяйственную продукцию многочисленным покупателям за рубежом. Стабильно
+						высокие
+						показатели работы позволили нам войти в ТОП-3 российских компаний-экспортеров зерна.</p>
+				</div>
+		</section>
+
+
+
+
+
+	</main>
+	<footer class="footer"></footer>
+
+</body>
+
+</html>

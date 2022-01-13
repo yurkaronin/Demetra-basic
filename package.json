@@ -1,0 +1,34 @@
+{
+  "name": "initial-project",
+  "version": "1.0.0",
+  "description": "Стартовый проект для бесплатного курса по вёрстке сайтов \"Пегас-трансфер\"",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurkaronin/initial-project.git"
+  },
+  "author": "Yuriy Ronin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yurkaronin/initial-project/issues"
+  },
+  "homepage": "https://github.com/yurkaronin/initial-project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.47.0"
+  }
+}
