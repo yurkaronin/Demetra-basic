@@ -37,7 +37,7 @@ const plumberConfig = {
 };
 // работа с html-файлами
 gulp.task('html', function () {
-  return gulp.src('./src/html/*.html')
+  return gulp.src('./src/html/pages/*.html')
   .pipe(plumber(plumberConfig))
   .pipe(fileInclude())
   .pipe(gulp.dest('./build/'))
