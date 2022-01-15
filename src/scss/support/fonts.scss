@@ -1,1 +1,5 @@
-@include font-face("Aeroport-Bold", "..libs/fonts/Aeroport-Bold", 400, normal);
+@include font-face("Aeroport", "Aeroport", 400, normal);
+@include font-face("Aeroport", "Aeroport-Bold", 700, normal);
+@include font-face("Aeroport", "Aeroport-Light", 300, normal);
+@include font-face("Aeroport", "Aeroport-Medium", 500, normal);
+@include font-face("Aeroport", "AeroportMono", 400, normal);
