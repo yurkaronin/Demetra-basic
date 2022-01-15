@@ -1,0 +1,123 @@
+.button {
+  font-family: inherit;
+  border: none;
+  padding: 14px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  background-color: #F8AA2B;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 0.8em;
+  line-height: 120%;
+  max-width: max-content;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+// кнопка меню 
+.button-menu {
+  display: none;
+
+  @media (max-width: 1025px) {
+    position: relative;
+    padding: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #F8AA2B;
+  }
+
+  span,
+  span::after,
+  span::before {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  span::after,
+  span::before {
+    content: "";
+    display: block;
+    transition: 0.3s;
+  }
+
+  span::before {
+    transform: translateY(-8px);
+  }
+
+  span::after {
+    transform: translateY(8px);
+  }
+
+  // активное 
+  &.active span {
+    height: 0;
+  }
+
+  &.active span:before {
+    transform: rotate(-45deg);
+  }
+
+  &.active span:after {
+    transform: rotate(45deg);
+  }
+
+}
+
+
+.button--icon {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+
+  @media (max-width: 1440px) {
+    padding: 15px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-image: url(../img/icons/arrow.svg);
+    background-position: center;
+  }
+}
+
+.button--lang {
+  background-color: #E67A00;
+  color: #FFFFFF;
+
+  @media (max-width: 1440px) {
+    font-size: 0;
+    line-height: 0;
+    gap: 0;
+  }
+
+  &::after {
+    background-image: url(../img/icons/globe.svg);
+  }
+}
+
+.button--account {
+  background-color: #6B3012;
+  color: #FFFFFF;
+
+  @media (max-width: 1440px) {
+    font-size: 0;
+    line-height: 0;
+    gap: 0;
+  }
+
+  &::after {
+    background-image: url(../img/icons/account.svg);
+  }
+}
