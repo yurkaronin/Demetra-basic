@@ -9,6 +9,10 @@
   border-bottom: 1px solid #DFDDDC;
   gap: 48px;
 
+  @media (max-width: 426px) {
+    padding: 15px;
+  }
+
   z-index: 10;
   position: relative;
 }
@@ -39,6 +43,9 @@
     z-index: 10;
   }
 
+  @media (max-width: 426px) {
+    padding: 116px 15px;
+  }
 }
 
 .header__buttons-group {
@@ -49,6 +56,10 @@
   @media (max-width: 1025px) {
     position: relative;
     z-index: 15;
+  }
+
+  @media (max-width: 426px) {
+    gap: 8px;
   }
 }
 

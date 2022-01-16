@@ -1,6 +1,10 @@
 .logo {
   max-width: 192px;
   text-decoration: none;
+
+  @media (max-width: 426px) {
+    max-width: 175px;
+  }
 }
 
 .logo__image {
