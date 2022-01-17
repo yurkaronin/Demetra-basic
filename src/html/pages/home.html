@@ -6,35 +6,68 @@
 
 })
 
-<body>
+<body class="home">
 	@@include('../sections/header.html')
 	<main class="main">
-		<h1 class="vis-hidden">Деметра трейдинг: закупка и экспорт
+		<h1 class="visually-hidden">Деметра трейдинг: закупка и экспорт
 			сельскохозяйственной продукции зерновой и масличной групп</h1>
 
+
+
 		<section class="hero">
-			<div class="wrapper">
-				<h2 class="hero__title">Поставщикам</h2>
-				<a href="#" class="btn">подробнее</a>
 
-				<ul class="hero__link-list">
-					<li class="hero__link-item"><a href="#" class="hero__link">Скачать договор поставки и документы на
-							регистрацию</a></li>
-					<li class="hero__link-item"><a href="#" class="hero__link">Регистрация поставщика</a></li>
-					<li class="hero__link-item"><a href="#" class="hero__link">Карта партнера</a></li>
-				</ul>
+			<div class="mySwiper">
+				<div class="swiper-wrapper">
 
-				<ul class="hero__btn-list">
-					<li class="hero__btn-item"><a href="#" class="btn">Прайс-листы</a></li>
-					<li class="hero__btn-item"><a href="#" class="btn">Авансирование</a></li>
-				</ul>
+					<article class="hero__slider-item swiper-slide">
+						<div class="wrapper">
+							<div class="hero__slider-top">
+								<h2 class="hero__title">Поставщикам</h2>
+								<a href="#" class="button">Подробнее</a>
+							</div>
 
-				<div class="hero__scroll">
-					<span>Скрольте вниз</span>
-					<button class="btn">Прокрутить вниз</button>
+							<ul class="hero__link-list">
+								<li class="hero__link-item"><a href="#" class="hero__link">Скачать договор поставки и документы на
+										регистрацию</a></li>
+								<li class="hero__link-item"><a href="#" class="hero__link">Регистрация поставщика</a></li>
+								<li class="hero__link-item"><a href="#" class="hero__link">Карта партнера</a></li>
+							</ul>
+
+						</div>
+					</article>
+
+					<article class="hero__slider-item swiper-slide">
+						<div class="wrapper">
+							<div class="hero__slider-top">
+								<h2 class="hero__title">Поставщикам</h2>
+								<a href="#" class="button">Подробнее</a>
+							</div>
+
+							<ul class="hero__link-list">
+								<li class="hero__link-item"><a href="#" class="hero__link">Скачать договор поставки и документы на
+										регистрацию</a></li>
+								<li class="hero__link-item"><a href="#" class="hero__link">Регистрация поставщика</a></li>
+								<li class="hero__link-item"><a href="#" class="hero__link">Карта партнера</a></li>
+							</ul>
+
+						</div>
+					</article>
+
 				</div>
 
+
+						<div class="hero__navigation">
+							<button class="hero__button-prev button" type="button">Прайс-листы</button>
+							<button class="hero__button-next button" type="button">Авансирование</button>
+						</div>
+
 			</div>
+
+			<div class="hero__scroll">
+				<span>Скрольте вниз</span>
+				<button class="button button--scroll"></button>
+			</div>
+
 		</section>
 
 		<section class="news content">
@@ -69,7 +102,7 @@
 							<time class="news-promo__date" datetime="2021-08-11">18 августа 2021</time>
 						</article>
 
-						<a href="#" class="btn">Все новости</a>
+						<a href="#" class="button">Все новости</a>
 					</div>
 
 				</div>
@@ -87,7 +120,7 @@
 					<div class="promo__details">
 						<h3>Закупаем зерновые культуры</h3>
 						<p>Получить консультацию</p>
-						<a href="#" class="btn-round">Подробнее</a>
+						<a href="#" class="button-round">Подробнее</a>
 					</div>
 				</li>
 				<li class="promo__item">
@@ -95,7 +128,7 @@
 					<div class="promo__details">
 						<h3>Пожалуйста, зарегистрируйтесь</h3>
 						<p>Стать поставщиком</p>
-						<a href="#" class="btn-round">Подробнее</a>
+						<a href="#" class="button-round">Подробнее</a>
 					</div>
 				</li>
 			</ul>
@@ -135,12 +168,23 @@
 					<h2 class="content__title">Горячая линия холдинга Деметра</h2>
 					<p class="content__subtile">Если Вам стало известно о фактах противоправных действий обратитесь на «Горячую
 						линию»</p>
-					<a href="#" class="content__btn">Узнать подробнее</a>
+					<a href="#" class="content__button">Узнать подробнее</a>
 				</div>
 			</div>
 		</section>
 	</main>
 	@@include('../sections/footer.html')
+
+	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			navigation: {
+				nextEl: ".hero__button-next",
+				prevEl: ".hero__button-prev",
+			},
+		});
+	</script>
 
 </body>
 

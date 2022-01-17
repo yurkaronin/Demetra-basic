@@ -9,6 +9,7 @@
   border-bottom: 1px solid #DFDDDC;
   gap: 48px;
   overflow: hidden;
+  transition: 0.5s;
 
   @media (max-width: 426px) {
     padding: 15px;
@@ -19,6 +20,8 @@
 }
 
 .header__logo {
+  transition: 0.5s;
+
   @media (max-width: 1025px) {
     position: relative;
     z-index: 15;

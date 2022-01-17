@@ -133,3 +133,18 @@
     background-image: url(../img/icons/account.svg);
   }
 }
+
+.button--scroll {
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+
+  &::after {
+    content: "\2193";
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #F8AA2B;
+  }
+}
