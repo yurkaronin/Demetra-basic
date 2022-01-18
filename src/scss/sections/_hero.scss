@@ -26,7 +26,7 @@
 .hero__slider-item .wrapper {
   position: relative;
   z-index: 10;
-  max-width: 1397px;
+  max-width: 1400px;
   width: 100%;
 }
 
@@ -41,6 +41,7 @@
     color: #2B1B14;
     font-weight: 500;
     font-size: 0.8em;
+    padding: 17px 21px;
   }
 }
 
@@ -51,6 +52,11 @@
   margin: 0;
   margin-bottom: 40px;
   line-height: 120%;
+
+  @media (max-width: 1440px) {
+    font-size: 5em;
+    margin-bottom: 50px;
+  }
 
 }
 
@@ -63,6 +69,10 @@
   gap: 10px;
   max-width: 798px;
   margin-bottom: 50px;
+
+  @media (max-width: 1440px) {
+    gap: 18px;
+  }
 
 }
 
@@ -80,11 +90,26 @@
   font-weight: 400;
 }
 
-.hero__navigation {
+.hero__bottom {
   position: absolute;
   bottom: 12%;
-  left: 305px;
-  z-index: 11;
+  z-index: 10;
+  width: 100%;
+  max-width: 100%;
+
+
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.hero__navigation {
   gap: 16px;
   display: flex;
 
@@ -125,10 +150,6 @@
 }
 
 .hero__scroll {
-  position: absolute;
-  bottom: 12%;
-  right: 305px;
-  z-index: 10;
   display: flex;
   align-items: center;
   gap: 16px;
