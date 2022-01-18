@@ -8,8 +8,15 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 185px 0 40px;
+  padding: 0;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 425px) {
+    padding-top: 100px;
+  }
 
   &::after {
     content: "";
@@ -34,14 +41,33 @@
   position: relative;
   max-width: 1320px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: end;
   gap: 32px;
+  margin-bottom: 40px;
+
+  @media (max-width: 1440px) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 425px) {
+    gap: 26px;
+    margin-bottom: 25px;
+  }
 
   .button {
     color: #2B1B14;
     font-weight: 500;
     font-size: 0.8em;
     padding: 17px 21px;
+
+    @media (max-width: 425px) {
+      padding: 15px 24px;
+    }
   }
 }
 
@@ -50,14 +76,23 @@
   font-weight: 700;
   color: #FFFFFF;
   margin: 0;
-  margin-bottom: 40px;
-  line-height: 120%;
+  line-height: 77%;
 
   @media (max-width: 1440px) {
     font-size: 5em;
-    margin-bottom: 50px;
   }
 
+  @media (max-width: 1024px) {
+    font-size: 3.6em;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.8em;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 1.6em;
+  }
 }
 
 .hero__link-list {
@@ -74,6 +109,10 @@
     gap: 18px;
   }
 
+  @media (max-width: 425px) {
+    gap: 10px;
+  }
+
 }
 
 .hero__link-item:before {
@@ -82,20 +121,32 @@
   font-weight: 700;
   margin-right: 15px;
 
+  @media (max-width: 768px) {
+    font-weight: 500;
+  }
+
 }
 
 .hero__link {
   color: #ffffff;
   font-size: 1.2em;
   font-weight: 400;
+
+  @media (max-width: 425px) {
+    font-size: 0.9em;
+  }
 }
 
 .hero__bottom {
   position: absolute;
-  bottom: 12%;
+  bottom: 40px;
   z-index: 10;
   width: 100%;
   max-width: 100%;
+
+  @media (max-width: 425px) {
+    bottom: 32px;
+  }
 
 
 
@@ -118,6 +169,12 @@
     background: #FFFFFF;
     color: #2B1B14;
     font-size: 0.8em;
+
+    @media (max-width: 425px) {
+      padding: 14px 16px;
+    }
+
+
   }
 
   .hero__button-next {
@@ -153,6 +210,10 @@
   display: flex;
   align-items: center;
   gap: 16px;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
 
   span {
     color: #ffffff;

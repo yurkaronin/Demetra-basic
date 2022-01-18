@@ -13,3 +13,9 @@
   font-size: 0;
   line-height: 0;
 }
+
+.mob-hide {
+  @media (max-width: 425px) {
+    display: none;
+  }
+}
