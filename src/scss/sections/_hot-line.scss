@@ -1,0 +1,39 @@
+.hot-line {
+  margin: 0 40px;
+  background-image: url(../img/bg/hotline.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 85px;
+  padding-bottom: 120px;
+
+  @media (max-width: 1440px) {
+    margin: 0;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 35px 0 64px;
+  }
+
+  @media (max-width: 425px) {
+    padding: 24px 0 40px;
+  }
+
+  .wrapper {
+    max-width: 1400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+}
+
+.hot-line__content {
+  max-width: 640px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+
+}
