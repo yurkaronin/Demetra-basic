@@ -20,7 +20,7 @@ const sourcemaps = require('gulp-sourcemaps');
 // const babel = require('gulp-babel');
 // const uglify = require('gulp-uglify');
 
-// Очистка финальной папки build
+// Очистка финальной папки docs
 gulp.task( 'clean', function() {
   return gulp.src( 'app/tmp/**/*', { read: false })
   .pipe( rm() )
@@ -40,7 +40,7 @@ gulp.task('html', function () {
   return gulp.src('./src/html/pages/*.html')
   .pipe(plumber(plumberConfig))
   .pipe(fileInclude())
-  .pipe(gulp.dest('./build/'))
+  .pipe(gulp.dest('./docs/'))
   .pipe(browserSync.reload({stream: true}));
 });
 
@@ -51,26 +51,26 @@ gulp.task('styles', function () {
   .pipe(sassGlob())
   .pipe(sass().on('error', sass.logError))
   .pipe(sourcemaps.write())
-  .pipe(gulp.dest('./build/css/'))
+  .pipe(gulp.dest('./docs/css/'))
   .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('scripts', function () {
     return gulp.src(['./src/js/*.js'])
-    .pipe(gulp.dest('./build/js/'))
+    .pipe(gulp.dest('./docs/js/'))
     .pipe(browserSync.reload({stream: true}));
   }
 );
 
 gulp.task('copy:libs', function () {
   return gulp.src('./src/libs/**/*')
-  .pipe(gulp.dest('./build/libs/'))
+  .pipe(gulp.dest('./docs/libs/'))
   .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('copy:img', function () {
   return gulp.src('./src/img/**/*')
-  .pipe(gulp.dest('./build/img/'))
+  .pipe(gulp.dest('./docs/img/'))
   .pipe(browserSync.reload({stream: true}));
 })
 
@@ -87,7 +87,7 @@ gulp.task('watch', function () {
 gulp.task('server', function () {
   browserSync.init({
     server: {
-      baseDir: './build/',
+      baseDir: './docs/',
     },
   });
 });
