@@ -54,7 +54,7 @@
 </header>
 <main class="main">
 	<div class="wrapper">
-		<ul>
+		<ul class="technical-sheet">
 			<li><a href="home.html">Главная</a></li>
 			<li><a href="">Новости</a></li>
 			<li><a href="">Статья</a></li>
@@ -66,6 +66,36 @@
 		</ul>
 	</div>
 </main>
+
+<style>
+  .technical-sheet {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+ 
+	max-width: max-content;
+	margin: 0 auto;
+	margin-top: 64px;
+	margin-bottom: 32px;
+  }
+  .technical-sheet li {
+	
+  }
+  .technical-sheet a {
+	font-weight: 700;
+	color: #6B3012;
+	font-size: 32px;
+	transition: background 0.5s ease;
+  }
+
+  .technical-sheet a:hover {
+	color: #F8AA2B;
+	transition: background 0.5s ease;
+  }
+</style>
 
 <footer class="footer">
   <div class="wrapper">

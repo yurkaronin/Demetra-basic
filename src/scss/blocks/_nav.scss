@@ -42,6 +42,7 @@
   color: #2B1B14;
   padding: 14px 0;
   position: relative;
+  transition: 0.3s linear;
 
   @media (max-width: 1025px) {
     font-size: 1.2em;
@@ -71,7 +72,7 @@
 
 .nav__link::after {
   @media (max-width: 1025px) {
-    background-color: #EAE8E7;
+    background-color: #eae8e7;
     width: 90%;
     height: 1px;
     display: block;
@@ -84,8 +85,8 @@
 
 .nav__link:hover,
 .nav__link:focus {
-  background: #F8AA2B;
-  color: #ffffff;
+  //background: #F8AA2B;
+  color: #F8AA2B;
   border-bottom: none;
   border-radius: 6px;
 

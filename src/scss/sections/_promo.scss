@@ -1,5 +1,5 @@
 .promo {
-  margin: 0 40px;
+  margin: 0 32px;
 
   @media (max-width: 1440px) {
     margin: 0;
@@ -16,11 +16,16 @@
 }
 
 .promo__item {
-  width: 50%;
+  width: calc(50% - 1px);
+  margin-left: -1px;
+  border-radius: 6px 0 0 6px;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     width: 100%;
+    margin-left: initial;
   }
+
 }
 
 .promo__img {
@@ -53,7 +58,6 @@
   justify-content: center;
   flex-direction: column;
   background: #F8AA2B;
-  border-radius: 0px 0px 0px 6px;
   padding: 45px;
   position: relative;
   min-height: 296px;
@@ -75,7 +79,12 @@
     padding: 45px 20px;
   }
 
-  &--mod {
+}
+
+.promo__item--mod {
+  border-radius: 0 6px 6px 0;
+
+  .promo__details {
     background-color: #E67A00;
   }
 }

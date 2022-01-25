@@ -16,6 +16,11 @@
   letter-spacing: 0.02em;
   display: inline-block;
   text-transform: lowercase;
+  transition: 0.3s linear;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   &--mod {
     color: #2B1B14;
@@ -108,7 +113,7 @@
 
 .button--lang {
   background-color: #E67A00;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: 1440px) {
     font-size: 0;

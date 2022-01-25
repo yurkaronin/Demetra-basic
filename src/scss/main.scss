@@ -1,6 +1,8 @@
 @import "support/mixins";
 @import "support/fonts";
 @import "support/global";
+@import "support/scalable-picture";
+@import "support/visually-hidden";
 
 @import "blocks/*.scss";
 @import "sections/*.scss";
