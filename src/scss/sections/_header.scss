@@ -20,6 +20,10 @@
     align-items: center;
     justify-content: space-between;
     gap: 48px;
+
+    @media (max-width: 426px) {
+      padding: 0;
+    }
   }
 
 

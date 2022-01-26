@@ -10,3 +10,9 @@
 @import "sections/*.scss";
 
 @import "support/active";
+
+.hide-425 {
+@media (max-width: 435px) {
+  display: none;
+}
+}

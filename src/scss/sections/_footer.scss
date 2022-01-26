@@ -12,14 +12,6 @@
   }
 }
 
-.footer .wrapper {
-  max-width: 1392px;
-
-  @media (max-width: 1441px) {
-    max-width: 1441px;
-  }
-}
-
 .footer__top {
   display: flex;
   justify-content: flex-start;

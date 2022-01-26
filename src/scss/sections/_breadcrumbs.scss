@@ -1,0 +1,47 @@
+.breadcrumbs {
+  padding-top: 42px;
+  padding-bottom: 12px;
+
+  @media (max-width: 1024px) {
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+}
+
+.breadcrumbs__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+}
+
+.breadcrumbs__item {
+
+}
+
+.breadcrumbs__link {
+  font-weight: 500;
+  font-size: 0.8em;
+  line-height: 150%;
+  color: #2B1B14;
+  list-style: none;
+  transition: 0.3s linear;
+
+  &:hover {
+    color: #F8AA2B;
+  }
+}
+
+.breadcrumbs__item:last-child {
+  a {
+    color: #F8AA2B;
+  }
+}
+
+.breadcrumbs + .news {
+  padding-top: 0;
+}
