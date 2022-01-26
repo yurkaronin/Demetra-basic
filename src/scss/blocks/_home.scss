@@ -14,24 +14,32 @@
     color: #ffffff;
   }
 
-  .header.sticky {
-    background-color: #fff;
+}
+
+.header.sticky {
+  background-color: #fff;
+  color: #2B1B14;
+  border-bottom: 1px solid #DFDDDC;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 100%;
+
+  .nav__link {
     color: #2B1B14;
-    border-bottom: 1px solid #DFDDDC;
-    z-index: 50;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
 
-    .nav__link {
-      color: #2B1B14;
+    &:hover,
+    &:focus {
+      color: #F8AA2B;
     }
 
-    .logo {
-      max-width: 153px;
-    }
+  }
+
+  .logo {
+    max-width: 153px;
   }
 }

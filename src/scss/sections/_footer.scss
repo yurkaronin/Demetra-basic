@@ -2,11 +2,11 @@
   background: #2B1B14;
   border-radius: 0px 0px 6px 6px;
   color: #BFBAB8;
-  margin: 0 40px;
+  margin: 0 32px;
   padding-top: 35px;
   padding-bottom: 40px;
 
-  @media (max-width: 1441px) {
+  @media (max-width: 1440px) {
     margin: 0;
     border-radius: 0;
   }
@@ -34,7 +34,7 @@
     margin-bottom: 35px;
   }
 
-  @media (max-width: 1025px) {
+  @media (max-width: 1024px) {
     gap: 40px;
   }
 
@@ -50,13 +50,9 @@
   max-width: 270px;
   width: 100%;
 
-  @media (max-width: 1025px) {
-    max-width: 200px;
-    margin-right: initial;
-  }
-
-  @media (max-width: 769px) {
+  @media (max-width: 1024px) {
     max-width: 192px;
+    margin-right: initial;
   }
 
   @media (max-width: 426px) {

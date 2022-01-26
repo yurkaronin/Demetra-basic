@@ -3,6 +3,9 @@
 @import "support/global";
 @import "support/scalable-picture";
 @import "support/visually-hidden";
+@import "support/custom-lock";
 
 @import "blocks/*.scss";
 @import "sections/*.scss";
+
+@import "support/active";

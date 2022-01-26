@@ -1,0 +1,14 @@
+.active {
+  .nav {
+    @media (max-width: 1025px) {
+      right: 0;
+    }
+
+
+  }
+
+  .nav__link {
+    color: #2B1B14;
+  }
+
+}

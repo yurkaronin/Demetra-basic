@@ -1,8 +1,32 @@
 .promo {
   margin: 0 32px;
+  position: relative;
 
   @media (max-width: 1440px) {
     margin: 0;
+  }
+
+  &::before {
+    content: "";
+    background-image: url(../img/bg/cross-promo.svg);
+    background-size: cover;
+    position: absolute;
+    width: 120%;
+    height: 30%;
+    top: -8%;
+    right: -10%;
+    z-index: 3;
+
+    @media (max-width: 1024px) {
+      width: 90%;
+      right: 5%;
+      height: 34%;
+      top: -22%;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -20,6 +44,11 @@
   margin-left: -1px;
   border-radius: 6px 0 0 6px;
   overflow: hidden;
+
+  @media (max-width: 1440px) {
+    margin-left: 0;
+    width: 50%;
+  }
 
   @media (max-width: 768px) {
     width: 100%;
