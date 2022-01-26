@@ -197,8 +197,7 @@
 		</section>
 	</main>
 	@@include('../sections/footer.html')
-
-	<script src="js/main.js"></script>
+	@@include('../templates/scripts.html')
 	<script src="libs/swiper-bundle.min.js"></script>
 	<script>
 		var swiper = new Swiper(".mySwiper", {
@@ -206,6 +205,7 @@
 				nextEl: ".hero__button-next",
 				prevEl: ".hero__button-prev",
 			},
+			autoplay: true,
 			loop: true,
 		});
 	</script>
