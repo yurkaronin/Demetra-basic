@@ -1,15 +1,20 @@
 "use strict";
-
+// прилипающая шапка со сменным лого в зависимости от того какая сейчас страница
 window.onscroll = function showHeader() {
   var header = document.querySelector('.header');
   let headerLogo = document.querySelector('.logo__image');
 
   if (window.pageYOffset > header.offsetHeight) {
     header.classList.add('sticky');
-    headerLogo.src = 'img/logo-rus.svg';
+    if (document.location.pathname === '/home.html') {
+      headerLogo.src = 'img/logo-rus.svg';
+    }
+
   } else {
     header.classList.remove('sticky');
-    headerLogo.src = 'img/logo-rus--wh.svg';
+    if (document.location.pathname === '/home.html') {
+      headerLogo.src = 'img/logo-rus--wh.svg';
+    }
   }
 }
 
@@ -32,7 +37,10 @@ menuButton.addEventListener('click', function (е) {
     headerLogo.src = 'img/logo-rus.svg';
     console.log("Меняем на чёрный!");
   } else {
-    headerLogo.src = 'img/logo-rus--wh.svg';
+    if (document.location.pathname === '/home.html') {
+      headerLogo.src = 'img/logo-rus--wh.svg';
+    }
+
   }
 });
 
