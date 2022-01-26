@@ -6,13 +6,13 @@ window.onscroll = function showHeader() {
 
   if (window.pageYOffset > header.offsetHeight) {
     header.classList.add('sticky');
-    if (document.location.pathname === '/home.html') {
+    if ((document.location.pathname === '/home.html') || (document.location.pathname === '/Demetra-basic/home.html')) {
       headerLogo.src = 'img/logo-rus.svg';
     }
 
   } else {
     header.classList.remove('sticky');
-    if (document.location.pathname === '/home.html') {
+    if ((document.location.pathname === '/home.html') || (document.location.pathname === '/Demetra-basic/home.html')) {
       headerLogo.src = 'img/logo-rus--wh.svg';
     }
   }
@@ -36,7 +36,7 @@ menuButton.addEventListener('click', function (е) {
   if (menuButton.classList.contains('active')) {
     headerLogo.src = 'img/logo-rus.svg';
   } else {
-    if (document.location.pathname === '/home.html') {
+    if ((document.location.pathname === '/home.html') || (document.location.pathname === '/Demetra-basic/home.html')) {
       headerLogo.src = 'img/logo-rus--wh.svg';
     }
 
