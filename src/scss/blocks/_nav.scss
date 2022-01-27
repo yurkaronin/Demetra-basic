@@ -44,6 +44,11 @@
   position: relative;
   transition: 0.3s linear;
 
+  &:hover,
+  &:focus {
+    color: #F8AA2B;
+  }
+
   @media (max-width: 1024px) {
     font-size: 1.2em;
     display: flex;
