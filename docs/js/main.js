@@ -75,6 +75,17 @@ SmoothScroll({
   touchpadSupport: true,
 });
 
+// Подмена логотипа в подвале при наведении
+let logotypeLink = document.querySelector('.js-logotype-link');
+let footerLogo = document.querySelector('.js-footer-logotype');
+
+logotypeLink.addEventListener('mouseover', function (e) {
+  footerLogo.src = 'img/logo-rus--color.svg';
+});
+
+logotypeLink.addEventListener('mouseout', function (e) {
+  footerLogo.src = 'img/logo-rus--wh.svg';
+});
 
 
 

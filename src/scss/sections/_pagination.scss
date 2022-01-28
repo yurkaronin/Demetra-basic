@@ -60,6 +60,11 @@
 
   }
 
+  &.active:hover,
+  &.active:focus {
+    box-shadow: none;
+  }
+
 
   &--arrow {
   background-color: #f8aa2b;

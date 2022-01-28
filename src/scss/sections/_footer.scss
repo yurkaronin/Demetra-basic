@@ -1,7 +1,7 @@
 .footer {
   background: #2B1B14;
-  border-radius: 0px 0px 6px 6px;
-  color: #BFBAB8;
+  border-radius: 0 0 6px 6px;
+  color: #bfbab8;
   margin: 0 32px;
   padding-top: 35px;
   padding-bottom: 40px;
@@ -30,7 +30,7 @@
     gap: 40px;
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 425px) {
     gap: 20px;
     padding-bottom: 25px;
     margin-bottom: 18px;
@@ -47,7 +47,7 @@
     margin-right: initial;
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 425px) {
     max-width: 172px;
   }
 
@@ -63,7 +63,7 @@
   gap: 10px 32px;
   flex-wrap: wrap;
 
-  @media (max-width: 1025px) {
+  @media (max-width: 1024px) {
     max-width: 688px;
   }
 
@@ -71,7 +71,7 @@
     max-width: 448px;
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 425px) {
     max-width: 100%;
     gap: 10px 24px;
   }
@@ -81,19 +81,24 @@
   max-width: 304px;
   width: 100%;
 
-  @media (max-width: 1025px) {
+  @media (max-width: 1024px) {
     max-width: 208px;
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 425px) {
     max-width: calc(50% - 12px);
   }
 }
 
 .footer__link {
-  color: inherit;
   font-size: 0.8em;
   color: #ffffff;
+  transition: 0.3s linear;
+
+  &:hover,
+  &:focus {
+    color: #F8AA2B;
+  }
 
 }
 
@@ -105,26 +110,33 @@
   gap: 32px;
   padding-bottom: 20px;
 
-  @media (max-width: 426px) {
+  @media (max-width: 1000px) {
+    justify-content: flex-start;
+    gap: 24px;
+    padding-bottom: 32px;
+  }
+
+  @media (max-width: 425px) {
     gap: 9px;
   }
 }
 
-.footer__adress {
+.footer__address {
   max-width: 600px;
   width: 100%;
   margin: 0;
   margin-right: 40px;
+  font-size: 0.8em;
 
-  @media (max-width: 1441px) {
+  @media (max-width: 1440px) {
     margin-right: auto;
   }
 
-  @media (max-width: 1025px) {
+  @media (max-width: 1024px) {
     max-width: 440px;
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 1000px) {
     max-width: 100%;
   }
 
@@ -143,11 +155,16 @@
   font-size: 0.8em;
   margin: 0;
 
-  @media (max-width: 1025px) {
+  @media (max-width: 1024px) {
     max-width: 200px;
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 1000px) {
+    max-width: calc(50% - 12px);
+    margin-right: auto;
+  }
+
+  @media (max-width: 530px) {
     max-width: 100%;
     width: 100%;
     display: flex;
@@ -167,17 +184,48 @@
   font-size: 0.8em;
   margin: 0;
 
-  @media (max-width: 1025px) {
+  @media (max-width: 1024px) {
     max-width: 200px;
   }
+  @media (max-width: 1000px) {
+    max-width: calc(50% - 12px);
+    margin-right: auto;
+  }
 
-  @media (max-width: 426px) {
+  @media (max-width: 530px) {
     max-width: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
+
+  a {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    max-width: max-content;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 1.5px;
+      background-color: #f8aa2b;
+      transition: width 0.4s;
+    }
+
+    &:hover:after,
+    &:focus:after {
+      width: 100%;
+    }
+
+
+  }
+
 
   .mail {
     display: block;
@@ -191,7 +239,7 @@
   flex-wrap: wrap;
   gap: 32px;
 
-  @media (max-width: 426px) {
+  @media (max-width: 425px) {
     gap: 4px;
   }
 }
@@ -201,23 +249,46 @@
   font-size: 0.7em;
   margin: 0;
 
-  @media (max-width: 426px) {
+  @media (max-width: 425px) {
     max-width: 100%;
     width: 100%;
   }
 }
 
 .footer .link {
-  @media (max-width: 426px) {
+  @media (max-width: 425px) {
     max-width: 100%;
     width: 100%;
   }
 }
 
-.link {
+.footer__politic-link {
   max-width: 211px;
   font-size: 0.7em;
+  line-height: 77%;
   color: #F8AA2B;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  max-width: max-content;
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 1.5px;
+    background-color: #f8aa2b;
+    transition: width 0.4s;
+  }
+
+  &:hover:after,
+  &:focus:after {
+    width: 100%;
+  }
+
 }
 
 .tel {

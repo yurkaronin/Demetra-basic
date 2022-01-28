@@ -66,6 +66,7 @@
 
     @media (max-width: 425px) {
       margin-bottom: 25px;
+      padding-bottom: 36px;
     }
   }
   .news__list {
@@ -105,6 +106,10 @@
 
     @media (max-width: 768px) {
       max-width: 100%;
+    }
+
+    @media (max-width: 425px) {
+      gap: 40px;
     }
 
     .news-promo {

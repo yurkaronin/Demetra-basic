@@ -8,8 +8,7 @@
 
   &::before {
     content: "";
-    background-image: url(../img/bg/cross-promo.svg);
-    background-size: cover;
+    background-image: url(../img/bg/texture-plus.svg);
     position: absolute;
     width: 120%;
     height: 30%;
@@ -49,6 +48,7 @@
   @media (max-width: 1440px) {
     margin-left: 0;
     width: 50%;
+    border-radius: 0;
   }
 
   @media (max-width: 768px) {
@@ -106,13 +106,17 @@
 
   @media (max-width: 425px) {
     min-height: 280px;
-    padding: 45px 20px;
+    padding: 45px 18px;
   }
 
 }
 
 .promo__item--mod {
   border-radius: 0 6px 6px 0;
+
+  @media (max-width: 1440px) {
+    border-radius: 0;
+  }
 
   .promo__details {
     background-color: #E67A00;

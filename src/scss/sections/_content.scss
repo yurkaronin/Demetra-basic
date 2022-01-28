@@ -3,7 +3,7 @@
 
   @media (max-width: 1024px) {
     padding-top: 36px;
-    padding-bottom: 0;
+    padding-bottom: 35px;
   }
 
   @media (max-width: 768px) {
@@ -16,6 +16,11 @@
 
   .title {
     line-height: 111%;
+
+    @media (max-width: 1024px) {
+      padding-bottom: 44px;
+      margin-bottom: 24px;
+    }
   }
 
 
@@ -51,6 +56,7 @@
 
   @media (max-width: 1024px) {
     max-width: 445px;
+    margin-top: 15px;
   }
 
   @media (max-width: 768px) {
@@ -63,7 +69,8 @@
   margin: 0;
   margin-bottom: 36px;
   font-size: 1.6em;
-  line-height: 125%;
+  //line-height: 125%;
+  line-height: 136%;
 
   @media (max-width: 1024px) {
     font-size: 1.2em;
@@ -79,5 +86,7 @@
 
   @media (max-width: 1024px) {
     font-size: 0.9em;
+    line-height: 133%;
+    margin-bottom: 25px;
   }
 }
