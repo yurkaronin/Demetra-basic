@@ -15,6 +15,10 @@
   flex-wrap: wrap;
   gap: 32px;
 
+  @media (max-width: 1600px) {
+    gap: 0 32px;
+  }
+
   @media (max-width: 426px) {
     margin-bottom: 52px;
   }

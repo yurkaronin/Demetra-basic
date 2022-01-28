@@ -71,7 +71,7 @@
   .news__list {
     gap: 144px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1400px) {
       gap: 32px;
     }
 
@@ -83,7 +83,7 @@
   .news-promo {
     max-width: 640px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1400px) {
       max-width: calc(50% - 16px);
     }
 
@@ -99,7 +99,7 @@
     gap: 48px;
     align-items: flex-start;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1400px) {
       max-width: calc(50% - 16px);
     }
 
@@ -108,7 +108,7 @@
     }
 
     .news-promo {
-      @media (max-width: 1024px) {
+      @media (max-width: 1400px) {
         max-width: 100%;
       }
     }
