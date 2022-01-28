@@ -6,6 +6,7 @@ window.onscroll = function showHeader() {
 
   if (window.pageYOffset > header.offsetHeight) {
     header.classList.add('sticky');
+
     if ( (document.location.pathname === '/home.html') && window.screen.width > 1600 || (document.location.pathname === '/Demetra-basic/home.html') && window.screen.width > 1600 ) {
       headerLogo.src = 'img/trademark.svg';
     } else if ( (document.location.pathname === '/home.html') && window.screen.width <= 1600 || (document.location.pathname === '/Demetra-basic/home.html') && window.screen.width <= 1600 ) {
