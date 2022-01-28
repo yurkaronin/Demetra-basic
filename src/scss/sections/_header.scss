@@ -4,8 +4,7 @@
   padding-top: 33px;
   padding-bottom: 33px;
   border-bottom: 1px solid #DFDDDC;
-  position: relative;
-  //overflow: hidden;
+  position: absolute;
   transition: 0.5s;
 
   z-index: 15;
@@ -74,5 +73,29 @@
 
   @media (max-width: 426px) {
     gap: 8px;
+  }
+}
+
+.header.sticky {
+  background-color: #fff;
+  color: #2B1B14;
+  border-bottom: 1px solid #DFDDDC;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 100%;
+
+  .nav__link {
+    color: #2B1B14;
+
+    &:hover,
+    &:focus {
+      color: #F8AA2B;
+    }
+
   }
 }

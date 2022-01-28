@@ -1,13 +1,15 @@
 "use strict";
 // прилипающая шапка со сменным лого в зависимости от того какая сейчас страница
 window.onscroll = function showHeader() {
-  var header = document.querySelector('.header');
+  let header = document.querySelector('.header');
   let headerLogo = document.querySelector('.logo__image');
 
   if (window.pageYOffset > header.offsetHeight) {
     header.classList.add('sticky');
-    if ((document.location.pathname === '/home.html') || (document.location.pathname === '/Demetra-basic/home.html')) {
+    if ( (document.location.pathname === '/home.html') && window.screen.width > 1600 || (document.location.pathname === '/Demetra-basic/home.html') && window.screen.width > 1600 ) {
       headerLogo.src = 'img/trademark.svg';
+    } else if ( (document.location.pathname === '/home.html') && window.screen.width <= 1600 || (document.location.pathname === '/Demetra-basic/home.html') && window.screen.width <= 1600 ) {
+      headerLogo.src = 'img/logo-rus.svg';
     }
 
   } else {
@@ -43,6 +45,7 @@ menuButton.addEventListener('click', function (е) {
   }
 });
 
+// плавный скролл по страницам
 SmoothScroll({
   // Время скролла 400 = 0.4 секунды
   animationTime: 800,
