@@ -2,3 +2,61 @@
   overflow: hidden;
   max-width: 100vw;
 }
+
+// кнопка меню
+.button-menu {
+  display: none;
+
+  @media (max-width: 1025px) {
+    position: relative;
+    padding: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #F8AA2B;
+  }
+
+  @media (max-width: 426px) {
+    padding: 24px;
+  }
+
+  span,
+  span::after,
+  span::before {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  span::after,
+  span::before {
+    content: "";
+    display: block;
+    transition: 0.3s;
+  }
+
+  span::before {
+    transform: translateY(-8px);
+  }
+
+  span::after {
+    transform: translateY(8px);
+  }
+
+  // активное
+  &.active span {
+    height: 0;
+  }
+
+  &.active span:before {
+    transform: rotate(-45deg);
+  }
+
+  &.active span:after {
+    transform: rotate(45deg);
+  }
+
+}
+

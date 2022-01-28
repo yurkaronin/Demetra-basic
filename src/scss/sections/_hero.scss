@@ -97,16 +97,6 @@
     margin-bottom: 20px;
   }
 
-  .button {
-    color: #2B1B14;
-    font-weight: 500;
-    font-size: 0.8em;
-    padding: 17px 21px;
-
-    @media (max-width: 425px) {
-      padding: 15px 24px;
-    }
-  }
 }
 
 .hero__title {
@@ -203,46 +193,6 @@
   gap: 16px;
   display: flex;
 
-  .button {
-    padding: 19px 32px;
-    background: #FFFFFF;
-    color: #2B1B14;
-    font-size: 0.8em;
-
-    @media (max-width: 425px) {
-      padding: 14px 16px;
-    }
-
-
-  }
-
-  .hero__button-next {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-
-    &::after {
-      content: "\2192";
-      font-weight: 700;
-      font-size: 1.2em;
-      color: #F8AA2B;
-    }
-  }
-
-  .hero__button-prev {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-
-    &::before {
-      content: "\2190";
-      font-weight: 700;
-      font-size: 1.2em;
-      color: #F8AA2B;
-    }
-  }
 }
 
 .hero__scroll {
@@ -254,12 +204,13 @@
     display: none;
   }
 
-  span {
+}
+
+.hero__label {
     color: #ffffff;
     font-size: 0.7em;
     letter-spacing: 0.02em;
   }
-}
 
 .hero__text-part {
   margin: 0;
