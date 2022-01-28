@@ -204,6 +204,13 @@
     display: none;
   }
 
+  .button--arrow {
+    padding: 23px 19px;
+    .arrow {
+      transform: rotate(90deg);
+    }
+  }
+
 }
 
 .hero__label {

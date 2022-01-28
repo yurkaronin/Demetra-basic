@@ -146,15 +146,57 @@
   }
 }
 
-//кнопки слайдера
-.button--prev {
-  flex-direction: row-reverse;
+//кнопка со стрелкой
+.button--arrow {
+  padding: 20px 19px;
+  gap: 26px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
   &::before {
     border-color: #ffffff;
     background-color: #ffffff;
   }
-  &::after {
-    background-image: url(../img/icons/arrow-to-left.svg);
+
+  span {}
+
+  .arrow {
+    stroke: #F8AA2B;
+    width: 18px;
+    height: 10px;
+    position: relative;
+    z-index: 12;
+    pointer-events: none;
+    overflow: visible;
+
+    .arrow__tail {
+      transform: translateX(0);
+      transition: 0.3s;
+      stroke: #F8AA2B;
+
+    }
+
+  }
+
+  &:hover {
+      .arrow__tail {
+        transform: translateX(-7px);
+        transition: 0.3s;
+      }
+
+  }
+
+}
+//кнопки слайдера
+.button--prev {
+  &::before {
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+
+  &.button--arrow .arrow {
+    transform: rotate(180deg);
   }
 }
 
@@ -163,7 +205,9 @@
     border-color: #ffffff;
     background-color: #ffffff;
   }
-  &::after {
-    background-image: url(../img/icons/arrow-to-right.svg);
+
+  &.button--arrow .arrow {
+    transform: rotate(0);
   }
+
 }
