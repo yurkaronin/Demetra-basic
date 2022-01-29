@@ -61,8 +61,10 @@
     flex-direction: column;
   }
 
-  @media (max-width: 426px) {
-    padding: 90px 15px 0;
+  @media (max-width: 425px) {
+    padding: 110px 15px 0;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 
