@@ -3,6 +3,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 425px) {
+    display: block;
+  }
 }
 
 .nav__list {
@@ -21,6 +25,12 @@
 
   @media (max-width: 426px) {
     margin-bottom: 36px;
+    //gap: 0;
+
+    height: 60vh;
+    overflow: auto;
+    display: block;
+    width: 100%;
   }
 }
 
