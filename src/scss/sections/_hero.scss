@@ -226,9 +226,31 @@
   margin: 0;
   color: #ffffff;
   font-size: 1.2em;
+  line-height: 133%;
   font-weight: 300;
 
   @media (max-width: 425px) {
     font-size: 0.9em;
+  }
+}
+
+//Первый экран БЕЗ слайдера
+.hero--no-slider {
+  .hero__slider-item::before {
+    display: none;
+  }
+  .hero__scroll {
+    margin-left: auto;
+  }
+  .hero__slider-top {
+    margin-bottom: 49px;
+  }
+  .hero__title {
+    font-size: 3.6em;
+    line-height: 111%;
+  }
+  .hero__text-part {
+    margin-bottom: 56px;
+    max-width: 752px;
   }
 }

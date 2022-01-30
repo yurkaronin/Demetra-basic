@@ -7,15 +7,15 @@ window.onscroll = function showHeader() {
   if (window.pageYOffset > header.offsetHeight) {
     header.classList.add('sticky');
 
-    if ( (document.location.pathname === '/home.html') && window.screen.width > 1600 || (document.location.pathname === '/Demetra-basic/home.html') && window.screen.width > 1600 ) {
+    if ( document.body.classList.contains('home') && window.screen.width > 1600) {
       headerLogo.src = 'img/trademark.svg';
-    } else if ( (document.location.pathname === '/home.html') && window.screen.width <= 1600 || (document.location.pathname === '/Demetra-basic/home.html') && window.screen.width <= 1600 ) {
+    } else if ( document.body.classList.contains('home') && window.screen.width <= 1600) {
       headerLogo.src = 'img/logo-rus.svg';
     }
 
   } else {
     header.classList.remove('sticky');
-    if ((document.location.pathname === '/home.html') || (document.location.pathname === '/Demetra-basic/home.html')) {
+    if (document.body.classList.contains('home')) {
       headerLogo.src = 'img/logo-rus--wh.svg';
     }
   }
@@ -35,16 +35,19 @@ if (menuButton) {
 }
 
 // Подмена лого в шапке, при открытом мобильном меню
-menuButton.addEventListener('click', function (е) {
-  if (menuButton.classList.contains('active')) {
-    headerLogo.src = 'img/logo-rus.svg';
-  } else {
-    if ((document.location.pathname === '/home.html') || (document.location.pathname === '/Demetra-basic/home.html')) {
-      headerLogo.src = 'img/logo-rus--wh.svg';
-    }
+if (document.body.classList.contains('home')) {
+  menuButton.addEventListener('click', function (е) {
+    if (menuButton.classList.contains('active')) {
+      headerLogo.src = 'img/logo-rus.svg';
+    } else {
+      if ((document.location.pathname === '/home.html') || (document.location.pathname === '/Demetra-basic/home.html')) {
+        headerLogo.src = 'img/logo-rus--wh.svg';
+      }
 
-  }
-});
+    }
+  });
+}
+
 
 // плавный скролл по страницам
 SmoothScroll({
