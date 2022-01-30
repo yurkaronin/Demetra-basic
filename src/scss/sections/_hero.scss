@@ -236,6 +236,9 @@
 
 //Первый экран БЕЗ слайдера
 .hero--no-slider {
+  .hero__slider-item {
+    flex-direction: column;
+  }
   .hero__slider-item::before {
     display: none;
   }
@@ -243,14 +246,52 @@
     margin-left: auto;
   }
   .hero__slider-top {
-    margin-bottom: 49px;
+    margin-bottom: 35px;
   }
   .hero__title {
     font-size: 3.6em;
     line-height: 111%;
+
+    @media (max-width: 1440px) {
+      font-size: 3.2em;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 1.6em;
+    }
   }
   .hero__text-part {
     margin-bottom: 56px;
     max-width: 752px;
+  }
+
+  .hero__slider-item .wrapper {
+    margin-bottom: auto;
+  }
+  .breadcrumbs {
+    margin-bottom: auto;
+    padding-top: 95px;
+
+    @media (max-width: 1440px) {
+      padding-top: 130px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 70px;
+    }
+
+    @media (max-width: 425px) {
+      padding-top: 45px;
+    }
+
+  }
+  .breadcrumbs__link {
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      color: #F8AA2B;
+    }
+
   }
 }

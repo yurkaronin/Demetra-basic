@@ -40,7 +40,7 @@
       right: -50%;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       display: none;
     }
   }
@@ -58,7 +58,7 @@
 .selling-block__content {
   max-width: 50%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     max-width: 100%;
   }
 

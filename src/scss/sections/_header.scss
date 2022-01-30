@@ -1,14 +1,15 @@
 .header {
   background-color: #fff;
-  color: #2B1B14;
+  color: #2b1b14;
   padding-top: 33px;
   padding-bottom: 33px;
-  border-bottom: 1px solid #DFDDDC;
+  border-bottom: 1px solid #dfdddc;
   position: relative;
   transition: 0.5s;
   width: 100%;
-
   z-index: 15;
+
+
 
   @media (max-width: 426px) {
     padding: 15px;
@@ -20,6 +21,22 @@
     align-items: center;
     justify-content: space-between;
     gap: 48px;
+
+    &:after {
+      display: block;
+      content: "";
+      width: calc(100% - 80px);
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      background: #FFFFFF;
+      opacity: 0.4;
+      transition: 0.3s linear;
+
+      @media (max-width: 425px) {
+        width: calc(100% - 32px);
+      }
+    }
 
     @media (max-width: 426px) {
       padding: 0;
@@ -96,6 +113,11 @@
   padding-top: 15px;
   padding-bottom: 15px;
   max-width: 100%;
+
+  .wrapper:after {
+    height: 0;
+  }
+
 
   .nav__link {
     color: #2B1B14;
