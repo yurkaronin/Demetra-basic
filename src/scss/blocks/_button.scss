@@ -1,7 +1,7 @@
 .button {
   text-decoration: none;
   padding: 20px 24px;
-
+  text-transform: lowercase;
   cursor: pointer;
   position: relative;
   text-align: center;
@@ -47,7 +47,6 @@
   position: relative;
   z-index: 1;
   pointer-events: none;
-  text-transform: lowercase;
   text-align: center;
   letter-spacing: 0.02em;
 }
@@ -109,7 +108,7 @@
 }
 //личный кабинет
 .button--account {
-
+  text-transform: initial;
   &::before {
     background-color: #6B3012;
     border-color: #6B3012;
@@ -132,6 +131,7 @@
 
 //переключение языка
 .button--lang {
+  text-transform: initial;
   &::before {
     background-color: #E67A00;
     border-color: #E67A00;

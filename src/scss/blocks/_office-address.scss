@@ -1,0 +1,69 @@
+.office-address {
+  background: #ffffff;
+  border: 1px solid #DFDDDC;
+  border-radius: 6px;
+  padding: 24px 40px 34px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border-color: transparent;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+
+    .news-promo__date:after {
+      width: 32px;
+    }
+  }
+
+  .button {
+    max-width: max-content;
+    padding: 0;
+    letter-spacing: 0.02em;
+    color: #E67A00;
+    gap: 16px;
+
+    span {
+      color: inherit;
+      font-size: 0.8em;
+      line-height: 100%;
+    }
+  }
+
+}
+
+.office-address__name {
+  font-weight: 300;
+  font-size: 1.6em;
+  line-height: 125%;
+  color: #554943;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.office-address__status {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.office-address__personal-data {
+  font-size: 0.9em;
+  color: #2B1B14;
+  margin: 0;
+
+  a {
+    font-weight: 700;
+    display: block;
+    color: inherit;
+    font-size: 1.1em;
+  }
+}
+
+.office-address__text {
+  font-size: 1em;
+  color: #2B1B14;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.office-address__wrapper {
+  margin-bottom: 22px;
+}

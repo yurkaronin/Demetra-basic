@@ -295,3 +295,16 @@
 
   }
 }
+
+.hero__text-part {
+  a[href="tel:8 (861) 279-20-78"] {
+    font-weight: 700;
+    display: block;
+  }
+  a[href="mailto:info@dtrading.ru"] {
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+
+  }
+}
