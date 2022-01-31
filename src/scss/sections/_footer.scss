@@ -22,7 +22,7 @@
   border-bottom: 1px solid #554943;
   margin-bottom: 37px;
 
-  @media (max-width: 1441px) {
+  @media (max-width: 1440px) {
     margin-bottom: 35px;
   }
 
@@ -42,12 +42,13 @@
   max-width: 270px;
   width: 100%;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1366px) {
     max-width: 192px;
-    margin-right: initial;
+    max-width: 28%;
+    //margin-right: initial;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 560px) {
     max-width: 172px;
   }
 
@@ -63,15 +64,16 @@
   gap: 10px 32px;
   flex-wrap: wrap;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1366px) {
     max-width: 688px;
+    max-width: 62%;
   }
 
-  @media (max-width: 769px) {
-    max-width: 448px;
-  }
+  //@media (max-width: 769px) {
+  //  max-width: 448px;
+  //}
 
-  @media (max-width: 425px) {
+  @media (max-width: 560px) {
     max-width: 100%;
     gap: 10px 24px;
   }
@@ -81,13 +83,22 @@
   max-width: 304px;
   width: 100%;
 
-  @media (max-width: 1024px) {
-    max-width: 208px;
+  @media (max-width: 1366px) {
+    max-width: calc((100% / 3) - 63px);
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 1140px) {
+    max-width: calc((100% / 2) - 24px);
+  }
+
+  //@media (max-width: 1024px) {
+  //  max-width: 208px;
+  //}
+
+  @media (max-width: 560px) {
     max-width: calc(50% - 12px);
   }
+
 }
 
 .footer__link {
