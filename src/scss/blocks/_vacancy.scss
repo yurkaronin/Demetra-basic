@@ -1,0 +1,70 @@
+.vacancy {
+  color: #2B1B14;
+  text-decoration: none;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #DFDDDC;
+  border-radius: 6px;
+  padding: 48px 40px 64px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+
+  @media (max-width: 1440px) {
+    padding: 31px 40px 48px;
+  }
+
+  @media (max-width: 425px) {
+    padding: 18px 24px 32px;
+  }
+
+  .button {
+    position: absolute;
+    right: -60px;
+    bottom: 0;
+    padding: 23px 19px;
+    transition: all 0.3s;
+    opacity: 0;
+    pointer-events: none;
+
+
+    &::before {
+      background-color: #F8AA2B;
+      border-radius: 6px 0;
+    }
+
+    .arrow {
+      stroke: #2B1B14;
+    }
+
+    .arrow__tail {
+      stroke: #2B1B14;
+    }
+
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+
+    .button {
+      opacity: 1;
+      pointer-events: initial;
+      right: 0;
+    }
+  }
+}
+
+.vacancy__name {
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 133%;
+  color: #2B1B14;
+  margin: 0;
+  margin-bottom: 16px;
+
+  @media (max-width: 425px) {
+    font-size: 1em;
+    margin-bottom: 14px;
+  }
+}

@@ -1,16 +1,4 @@
 .news-promo {
-  max-width: 640px;
-  width: 100%;
-
-  @media (max-width: 1024px) {
-    max-width: 445px;
-  }
-
-  @media (max-width: 768px) {
-    max-width: 100%;
-    width: 100%;
-  }
-
   &--mod {
     margin-bottom: 48px;
 
@@ -25,6 +13,10 @@
   width: 100%;
   margin-bottom: 24px;
   border-radius: 6px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
 
   img {
     object-fit: cover;
@@ -83,6 +75,11 @@
     background-color: #F8AA2B;
     transition: 0.3s;
   }
+
+}
+
+a:hover > .news-promo__date:after {
+  width: 32px;
 }
 
 .news-promo--mod {
