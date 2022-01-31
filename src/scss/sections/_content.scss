@@ -223,6 +223,7 @@
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
+  margin-bottom: 48px;
 
   &--mod {
     @media (max-width: 768px) {
