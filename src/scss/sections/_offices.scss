@@ -1,0 +1,14 @@
+.offices {
+  padding-bottom: 0;
+
+  @media (max-width: 425px) {
+    padding: 40px 0 0;
+  }
+
+  .content__list,
+  .content__one-col {
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+}

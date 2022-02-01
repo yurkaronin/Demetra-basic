@@ -1,12 +1,56 @@
 .contact-form {
-  .content__two-col {}
+  padding: 36px 0 50px;
+
+  @media (max-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 65px;
+  }
+
+  @media (max-width: 425px) {
+    padding-top: 25px;
+    padding-bottom: 36px;
+  }
+
+
+  .content__two-col {
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
 
   .contact-form__right,
   .contact-form__left {
     max-width: calc(50% - 16px);
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 
-  .full-article__title {
+  .contact-form__right {
+    margin-top: 28px;
+
+    @media (max-width: 425px) {
+      margin-top: 25px;
+    }
+  }
+
+  .title {
+    padding: 0;
     max-width: 430px;
+
+    @media (max-width: 1440px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 2.4em;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 1.6em;
+      margin: 0;
+    }
   }
 }

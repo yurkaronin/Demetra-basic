@@ -5,10 +5,17 @@
   padding: 24px 40px 34px;
   transition: all 0.3s ease-in-out;
 
+  @media (max-width: 425px) {
+    padding: 16px 22px 26px;
+  }
+
+
+
   .arrow {
     stroke: #E67A00;
     transition: 0.3s;
   }
+
   .arrow__tail {
     stroke: #E67A00;
     transition: 0.3s;
@@ -25,6 +32,10 @@
       color: inherit;
       font-size: 0.8em;
       line-height: 100%;
+
+      @media (max-width: 425px) {
+        display: flex;
+      }
     }
   }
 
@@ -37,15 +48,25 @@
   color: #554943;
   margin: 0;
   margin-bottom: 6px;
+
+  @media (max-width: 425px) {
+    font-size: 1.2em;
+    margin-bottom: 2px;
+  }
 }
 
 .office-address__status {
   margin-top: 0;
   margin-bottom: 24px;
+
+  @media (max-width: 425px) {
+    margin-bottom: 15px;
+  }
 }
 
 .office-address__personal-data {
   font-size: 0.9em;
+  line-height: 150%;
   color: #2B1B14;
   margin: 0;
 
@@ -62,10 +83,19 @@
   color: #2B1B14;
   margin: 0;
   margin-bottom: 16px;
+
+  @media (max-width: 425px) {
+    margin-bottom: 24px;
+    font-size: 0.9em;
+  }
 }
 
 .office-address__wrapper {
   margin-bottom: 22px;
+
+  @media (max-width: 425px) {
+    margin-bottom: 14px;
+  }
 }
 
 .office-address:hover {
@@ -85,6 +115,7 @@
     stroke: #F8AA2B;
     transition: 0.3s;
   }
+
   .arrow__tail {
     stroke: #F8AA2B;
     transform: translateX(-7px);
