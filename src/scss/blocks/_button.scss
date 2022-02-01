@@ -155,6 +155,10 @@
   align-items: baseline;
   justify-content: space-between;
 
+  @media (max-width: 425px) {
+    padding: 19px 15px;
+  }
+
   &::before {
     border-color: #ffffff;
     background-color: #ffffff;
@@ -234,7 +238,7 @@
     display: none;
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 425px) {
     padding: 24px;
   }
 
