@@ -1,0 +1,24 @@
+.link-decorate {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  max-width: max-content;
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #f8aa2b;
+    transition: width 0.4s;
+  }
+
+  &:hover:after,
+  &:focus:after {
+    width: 100%;
+  }
+
+}

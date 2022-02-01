@@ -2,7 +2,7 @@
   background: #2B1B14;
   border-radius: 0 0 6px 6px;
   color: #bfbab8;
-  margin: 0 32px;
+  margin: 0 40px 40px;
   padding-top: 35px;
   padding-bottom: 40px;
 
@@ -184,6 +184,18 @@
   font-size: 0.8em;
   margin: 0;
 
+  a {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+
+    &:hover {
+      color: #F8AA2B;
+    }
+  }
+
   @media (max-width: 1024px) {
     max-width: 200px;
   }
@@ -213,6 +225,12 @@
   font-size: 0.8em;
   margin: 0;
 
+  a {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #F8AA2B;
+  }
+
   @media (max-width: 1024px) {
     max-width: 200px;
   }
@@ -229,36 +247,6 @@
     gap: 10px;
   }
 
-  a {
-    position: relative;
-    text-decoration: none;
-    display: inline-block;
-    max-width: max-content;
-
-    &:after {
-      content: '';
-      position: absolute;
-      display: block;
-      left: 0;
-      bottom: -5px;
-      width: 0;
-      height: 1.5px;
-      background-color: #f8aa2b;
-      transition: width 0.4s;
-    }
-
-    &:hover:after,
-    &:focus:after {
-      width: 100%;
-    }
-
-
-  }
-
-
-  .mail {
-    display: block;
-  }
 }
 
 .footer__bottom {
@@ -292,42 +280,8 @@
 }
 
 .footer__politic-link {
-  max-width: 211px;
   font-size: 0.7em;
-  line-height: 77%;
+  line-height: 110%;
   color: #F8AA2B;
-  position: relative;
-  text-decoration: none;
-  display: inline-block;
   max-width: max-content;
-
-  &:after {
-    content: '';
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 1.5px;
-    background-color: #f8aa2b;
-    transition: width 0.4s;
-  }
-
-  &:hover:after,
-  &:focus:after {
-    width: 100%;
-  }
-
-}
-
-.tel {
-  font-size: 1.5em;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.mail {
-  font-size: 1.5em;
-  font-weight: 700;
-  color: #F8AA2B;
 }
