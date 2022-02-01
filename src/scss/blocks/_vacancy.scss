@@ -1,13 +1,12 @@
 .vacancy {
   color: #2B1B14;
-  text-decoration: none;
   width: 100%;
   background: #FFFFFF;
-  border: 1px solid #DFDDDC;
+  outline: 1px solid #DFDDDC;
   border-radius: 6px;
   padding: 48px 40px 64px;
   position: relative;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s;
   overflow: hidden;
 
   @media (max-width: 1440px) {
@@ -45,7 +44,7 @@
 
   &:hover,
   &:focus {
-    border-color: transparent;
+    //outline: none;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
 
     .button {
