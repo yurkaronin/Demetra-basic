@@ -280,3 +280,14 @@
   }
 
 }
+
+.button--mod {
+  &::before {
+    background-color: #6B3012;
+    border-color: #6B3012;
+  }
+  span {
+    color: #ffffff;
+  }
+
+}

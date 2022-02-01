@@ -225,6 +225,8 @@
   flex-wrap: wrap;
   margin-bottom: 48px;
 
+
+
   &--mod {
     @media (max-width: 768px) {
       gap: 16px;
@@ -234,6 +236,7 @@
   .content__list-item {
     max-width: calc(50% - 16px);
     width: 100%;
+    z-index: 11;
 
     @media (max-width: 768px) {
       max-width: 100%;
@@ -243,3 +246,32 @@
 
 }
 
+.content__flex-left,
+.content__flex-right {
+  max-width: calc(50% - 16px);
+
+  @media (max-width: 1000px) {
+    max-width: 100%;
+  }
+}
+
+.content__big-text {
+  font-weight: 300;
+  font-size: 1.6em;
+  line-height: 125%;
+  color: #2B1B14;
+  margin: 0;
+
+  a {
+    font-weight: 700;
+    display: block;
+    color: inherit;
+  }
+}
+
+.content__links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 32px;
+}
