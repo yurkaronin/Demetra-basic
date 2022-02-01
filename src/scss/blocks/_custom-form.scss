@@ -83,21 +83,6 @@
   position: relative;
   padding-left: 40px;
 
-  &:before {
-    opacity: 0.3;
-    transition: 0.3s
-  }
-
-  &:hover,
-  &:focus,
-  &:active {
-
-    &:before {
-      opacity: 1;
-
-    }
-  }
-
   a {
     position: relative;
 
@@ -131,10 +116,14 @@
   width: 25px;
   height: 25px;
   background-repeat: no-repeat;
+  opacity: 0.3;
+  transition: 0.3s
 }
 
 .custom-form__label--accept input[type=checkbox]:checked + .custom-form__politic::before {
   background-image: url(../img/icons/checkbox-on.svg);
+  opacity: 1;
+  transition: 0.3s
 }
 
 .custom-form__bottom {
