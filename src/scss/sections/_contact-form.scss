@@ -1,0 +1,12 @@
+.contact-form {
+  .content__two-col {}
+
+  .contact-form__right,
+  .contact-form__left {
+    max-width: calc(50% - 16px);
+  }
+
+  .full-article__title {
+    max-width: 430px;
+  }
+}

@@ -174,13 +174,12 @@
     z-index: 12;
     pointer-events: none;
     overflow: visible;
+  }
 
-    .arrow__tail {
-      transform: translateX(0);
-      transition: 0.3s;
-      stroke: #F8AA2B;
-
-    }
+  .arrow__tail {
+    transform: translateX(0);
+    transition: 0.3s;
+    stroke: #F8AA2B;
 
   }
 

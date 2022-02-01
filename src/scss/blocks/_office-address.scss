@@ -5,13 +5,13 @@
   padding: 24px 40px 34px;
   transition: all 0.3s ease-in-out;
 
-  &:hover {
-    border-color: transparent;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
-
-    .news-promo__date:after {
-      width: 32px;
-    }
+  .arrow {
+    stroke: #E67A00;
+    transition: 0.3s;
+  }
+  .arrow__tail {
+    stroke: #E67A00;
+    transition: 0.3s;
   }
 
   .button {
@@ -66,4 +66,28 @@
 
 .office-address__wrapper {
   margin-bottom: 22px;
+}
+
+.office-address:hover {
+  border-color: transparent;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+
+  .news-promo__date:after {
+    width: 32px;
+  }
+
+  .button {
+    color: #F8AA2B;
+    transition: 0.3s;
+  }
+
+  .arrow {
+    stroke: #F8AA2B;
+    transition: 0.3s;
+  }
+  .arrow__tail {
+    stroke: #F8AA2B;
+    transform: translateX(-7px);
+    transition: 0.3s;
+  }
 }

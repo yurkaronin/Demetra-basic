@@ -1,0 +1,77 @@
+.custom-form {
+
+  .button {}
+  
+  .g-recaptcha {}
+}
+
+.custom-form__items-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  margin-bottom: 30px;
+}
+
+.custom-form__item {
+  position: relative;
+  margin: 0;
+
+  label {
+    position: absolute;
+    left: 12px;
+    top: -10px;
+    padding: 0 4px;
+    color: #554943;
+    background: #fff;
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    min-height: 48px;
+    padding: 0 16px;
+    border-radius: 6px;
+    color: #231f20;
+    font-weight: 400;
+    font-size: 18px;
+    background: #FFFFFF;
+    border: 1px solid #DFDDDC;
+  }
+
+  textarea {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+.custom-form__footer {
+  margin-bottom: 32px;
+}
+
+.custom-form__politic {
+  margin: 0;
+  font-size: 0.9em;
+  color: #554943;
+  position: relative;
+  padding-left: 40px;
+}
+
+.custom-form__label--accept input[type=checkbox]+.custom-form__politic::before {
+  content: "";
+  background-image: url(../img/icons/checkbox-off.svg);
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.custom-form__bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}

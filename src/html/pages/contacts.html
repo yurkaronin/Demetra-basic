@@ -73,26 +73,66 @@
   <section class="content">
     <div class="wrapper">
 
-        <div class="content__one-col container">
-          <div class="content__list">
-            @@include('../templates/office-address.html')
-          </div>
-        </div><!--content__one-col-->
+      <div class="content__one-col container">
+        <div class="content__list">
+          @@include('../templates/office-address.html')
+        </div>
+      </div><!--content__one-col-->
 
-      </div>
+    </div>
   </section>
 
   <section class="contact-form">
     <div class="wrapper">
       <div class="content__two-col container">
-        <h2 class="title full-article__title">Обратная связь</h2>
-
-        <div class="custom-form">
-
+        <div class="contact-form__left">
+          <h2 class="title full-article__title">Обратная связь</h2>
         </div>
-      </div>
+
+        <div class="contact-form__right">
+          <form class="custom-form" action="">
+
+            <div class="custom-form__items-wrapper">
+
+              <p class="custom-form__item">
+                <label for="custom-name">ФИО</label>
+                <input type="text" name="name" id="custom-name">
+              </p>
+              <p class="custom-form__item">
+                <label for="custom-email">E-mail</label>
+                <input type="email" name="email" id="custom-email">
+              </p>
+              <p class="custom-form__item">
+                <label for="custom-text">Ваш комментарий</label>
+                <textarea rows="10" cols="45" name="text" id="custom-text"></textarea>
+              </p>
+
+            </div>
+
+            <div class="custom-form__footer">
+              <label class="custom-form__label custom-form__label--accept">
+
+                <input class="visually-hidden" type="checkbox" name="confirm" checked="">
+
+                <p class="custom-form__politic">Я выражаю свое согласие с <a href="javascript:;">Политикой
+                  конфиденциальности</a> сайта и даю разрешение на обработку своих персональных данных</p>
+              </label>
+            </div>
+
+            <div class="custom-form__bottom">
+              <div class="g-recaptcha" data-sitekey="">
+                <img src="img/recapcha.jpg" alt="рекапча">
+              </div>
+              <button class="button" type="submit"><span>отправить</span></button>
+            </div>
+
+
+          </form>
+        </div>
 
       </div>
+
+    </div>
     </div>
   </section>
 
