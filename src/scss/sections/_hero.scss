@@ -3,7 +3,6 @@
 }
 
 .hero__slider-item {
-  //background-image: url(../img/bg/first-scr-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -52,7 +51,7 @@
     height: 90%;
     top: 5%;
     right: -20%;
-    z-index: 3;
+    z-index: 4;
     pointer-events: none;
     
     @media (max-width: 1024px) {
