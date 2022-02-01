@@ -6,17 +6,14 @@ window.onscroll = function showHeader() {
 
   if (window.pageYOffset > header.offsetHeight) {
     header.classList.add('sticky');
-
-    if ( document.body.classList.contains('home') && window.screen.width > 1600) {
-      headerLogo.src = 'img/trademark.svg';
-    } else if ( document.body.classList.contains('home') && window.screen.width <= 1600) {
-      headerLogo.src = 'img/logo-rus.svg';
-    }
+    headerLogo.src = 'img/trademark.svg';
 
   } else {
     header.classList.remove('sticky');
     if (document.body.classList.contains('home')) {
       headerLogo.src = 'img/logo-rus--wh.svg';
+    } else {
+      headerLogo.src = 'img/logo-rus.svg';
     }
   }
 }
