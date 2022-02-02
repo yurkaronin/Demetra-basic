@@ -5,7 +5,7 @@
 "seo-desc": "Узнать стоимость с места. Стоимость перевозки рассчитывается исходя из актуального тарифа на автотранспорт Вся информация на сайте носит справочный характер и не является публичной офертой, определяемой статьей 437 Гражданского кодекса РФ"
 })
 
-<body class="home advanced">
+<body class="home">
 @@include('../sections/header.html', {
 "logo-image": "img/logo-rus--wh.svg"
 })
@@ -38,7 +38,7 @@
 
 
           <p class="hero__text-part">Узнать стоимость с места. Стоимость перевозки рассчитывается исходя из актуального тарифа на автотранспорт
-            Вся информация на сайте носит справочный характер и не является публичной офертой, определяемой статьей 437 Гражданского кодекса РФ</p>
+            <span>Вся информация на сайте носит справочный характер и не является публичной офертой, определяемой статьей 437 Гражданского кодекса РФ</span></p>
           <a href="#" class="button"><span>задать вопрос</span></a>
 
         </div>
@@ -67,42 +67,25 @@
     </div>
 
   </section>
-
-  <section class="content">
+  <section class="all-price">
     <div class="wrapper">
-      <div class="content__two-col container">
-        <div class="content__flex-left">
-          <h2 class="title full-article__title">Авансирование производителей</h2>
-        </div>
-        <div class="content__flex-right">
-            <p class="content__big-text">Любые подробности всегда можно уточнить по телефону <a href="tel:88612792078">8 (861)
-              279-20-78</a> или написав нам</p>
-            <div class="content__links-wrapper">
-              <a href="#" class="button"><span>обратная связь</span></a>
-              <a href="#" class="button button--mod"><span>подробнее</span></a>
-            </div>
-        </div>
 
-
-      </div><!--content__two-col-->
-
-      <div class="container container--mod advanced__simple-text">
-        <p>Финансовая помощь (авансирование) на выращивание урожая. Рекомендации по аграрным вопросам. Быстрая процедура выдачи средств. После согласования информации оперативно готовим коммерческое предложение.
-
-          Высокий уровень логистики. Можем доставить любой объем продукции. Использование авто и железнодорожного транспорта для максимально быстрых поставок.</p>
+      <div class="tabs container">
+        <p class="title tabs__title"><button class="tabs__buttons button-text" type="button">Портовые</button> и <button class="tabs__buttons button-text active" type="button">Линейные</button> элеваторы</p>
       </div>
+
+      @@include('../sections/price.html')
     </div>
   </section>
-
   <section class="promo">
     <h2 class="visually-hidden">Сотрудничество и консультации</h2>
 
     <ul class="promo__list">
-      <li class="promo__item scalable-picture">
-        <img src="img/promo/3.jpg" alt="фото" class="promo__img" width="920" height="576" loading="lazy">
+      <li class="promo__item">
+        <img src="img/promo/1.jpg" alt="фото" class="promo__img" width="920" height="576" loading="lazy">
         <div class="promo__details">
-          <h3 class="promo__title">Договор поставки и документы на регистрацию</h3>
-          <p class="promo__text">Скачать</p>
+          <h3 class="promo__title">ООО  «Деметра Трейдинг» не рассылает цены посредством смс-сообщений</h3>
+          <p class="promo__text">Получить консультацию</p>
           <a href="#" class="button-round">
             <div class="cbk-phone-circle"></div>
             <div class="cbk-phone-second_circle"></div>
@@ -110,11 +93,11 @@
           </a>
         </div>
       </li>
-      <li class="promo__item promo__item--mod scalable-picture">
-        <img src="img/promo/2.jpg" alt="фото" class="promo__img" width="920" height="576" loading="lazy">
+      <li class="promo__item promo__item--mod">
+        <img src="img/promo/6.jpg" alt="фото" class="promo__img" width="920" height="576" loading="lazy">
         <div class="promo__details promo__details--mod">
-          <h3 class="promo__title">Пожалуйста, зарегистрируйтесь</h3>
-          <p class="promo__text">Стать поставщиком</p>
+          <h3 class="promo__title">Вам нужна доставка с вашего склада?</h3>
+          <p class="promo__text">Рассчитать доставку</p>
           <a href="#" class="button-round">
             <div class="cbk-phone-circle"></div>
             <div class="cbk-phone-second_circle"></div>
@@ -145,7 +128,7 @@
     <h2 class="visually-hidden">Сотрудничество и консультации</h2>
 
     <ul class="promo__list">
-      <li class="promo__item scalable-picture">
+      <li class="promo__item">
         <img src="img/promo/4.jpg" alt="фото" class="promo__img" width="920" height="576" loading="lazy">
         <div class="promo__details">
           <p class="promo__text">Прайс-лист в портовых элеваторах</p>
@@ -156,7 +139,7 @@
           </a>
         </div>
       </li>
-      <li class="promo__item promo__item--mod scalable-picture">
+      <li class="promo__item promo__item--mod">
         <img src="img/promo/5.jpg" alt="фото" class="promo__img" width="920" height="576" loading="lazy">
         <div class="promo__details promo__details--mod">
           <p class="promo__text">Прайс-лист в линейных элеваторах</p>

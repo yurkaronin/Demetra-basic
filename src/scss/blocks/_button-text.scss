@@ -1,0 +1,33 @@
+.button-text {
+  background-color: transparent;
+  border: none;
+  color: #E67A00;
+  font-family: inherit;
+  font-weight: inherit;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  padding: 0;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 4px;
+    background-color: #E67A00;
+    transition: max-width 0.4s;
+  }
+
+}
+
+.button-text.active {
+  color: #E67A00 !important;
+  &:before {
+    width: 100%;
+
+  }
+
+}

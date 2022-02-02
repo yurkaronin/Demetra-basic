@@ -231,6 +231,12 @@
   @media (max-width: 425px) {
     font-size: 0.9em;
   }
+
+  span {
+    font-size: 0.667em;
+    display: block;
+    margin-top: 12px;
+  }
 }
 
 //Первый экран БЕЗ слайдера
@@ -300,14 +306,14 @@
 }
 
 .hero__text-part {
-  a[href="tel:8 (861) 279-20-78"] {
+  a[href="tel:88612792078"] {
     font-weight: 700;
-    display: block;
+    display: block !important;
   }
   a[href="mailto:info@dtrading.ru"] {
     font-weight: 700;
     color: #ffffff;
-    display: block;
+    display: block !important;
 
   }
 }
