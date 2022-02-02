@@ -283,53 +283,6 @@
 	</div>
 </section>
 </main>
-<footer class="footer">
-  <div class="wrapper">
-    <div class="container">
-      <div class="footer__top">
-        <!-- лого  -->
-        <a href="#" class="logo js-logotype-link">
-          <img class="logo__image js-footer-logotype" src="img/logo-rus--wh.svg" alt="логотип" width="192" height="70"
-               loading="lazy">
-        </a>
-
-        <ul class="footer__list">
-          <li class="footer__item"><a href="#" class="footer__link">Прайс-лист</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Новости</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
-
-          <li class="footer__item"><a href="#" class="footer__link">Поставщикам</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">О компании</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Личный кабинет</a></li>
-
-          <li class="footer__item"><a href="#" class="footer__link">Авансирование</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Вакансии</a></li>
-
-        </ul>
-
-      </div>
-      <div class="footer__center">
-        <p class="footer__address"><b>«Деметра Трейдинг»</b>
-          350049, Краснодарский край, Краснодар г, Красных Партизан ул, дом № 200, оф. эт/пом 6.7/81.87
-        </p>
-
-        <div class="footer__wrapper">
-          <p class="footer__telephone">По всем вопросам
-            <a href="tel:88612792078">8 (861) 279-20-78</a>
-          </p>
-          <p class="footer__mail">Или пишите
-            <a href="mailto:Info@dtrading.ru" class="link-decorate">Info@dtrading.ru</a>
-          </p>
-        </div>
-
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__cop">© «Деметра Трейдинг», 2021</p>
-        <a href="#" class="footer__politic-link link-decorate" target="_blank">Политика конфиденциальности</a>
-      </div>
-    </div>
-  </div>
-</footer>
 <div class="modals">
 	<div class="modal-overlay">
 		
@@ -391,25 +344,69 @@
 	
 	</div> <!-- .modal-overlay -->
 </div>
+<footer class="footer">
+  <div class="wrapper">
+    <div class="container">
+      <div class="footer__top">
+        <!-- лого  -->
+        <a href="#" class="logo js-logotype-link">
+          <img class="logo__image js-footer-logotype" src="img/logo-rus--wh.svg" alt="логотип" width="192" height="70"
+               loading="lazy">
+        </a>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
-				integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Прайс-лист</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Новости</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
 
+          <li class="footer__item"><a href="#" class="footer__link">Поставщикам</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">О компании</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Личный кабинет</a></li>
 
+          <li class="footer__item"><a href="#" class="footer__link">Авансирование</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Вакансии</a></li>
+
+        </ul>
+
+      </div>
+      <div class="footer__center">
+        <p class="footer__address"><b>«Деметра Трейдинг»</b>
+          350049, Краснодарский край, Краснодар г, Красных Партизан ул, дом № 200, оф. эт/пом 6.7/81.87
+        </p>
+
+        <div class="footer__wrapper">
+          <p class="footer__telephone">По всем вопросам
+            <a href="tel:88612792078">8 (861) 279-20-78</a>
+          </p>
+          <p class="footer__mail">Или пишите
+            <a href="mailto:Info@dtrading.ru" class="link-decorate">Info@dtrading.ru</a>
+          </p>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__cop">© «Деметра Трейдинг», 2021</p>
+        <a href="#" class="footer__politic-link link-decorate" target="_blank">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="libs/SmoothScroll.min.js"></script>
 <script src="libs/swiper-bundle.min.js"></script>
-<script src="js/modals.js"></script>
-<script src="js/main.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    navigation: {
-      nextEl: ".hero__button-next",
-      prevEl: ".hero__button-prev",
-    },
-    // autoplay: true,
-    loop: true,
-  });
-</script>
 
+<script src="js/main.js"></script>
+<script src="js/modals.js" async></script>
+
+<script>
+	var swiper = new Swiper(".mySwiper", {
+		navigation: {
+			nextEl: ".hero__button-next",
+			prevEl: ".hero__button-prev",
+		},
+		// autoplay: true,
+		loop: true,
+	});
+</script>
 </body>
 
 </html>

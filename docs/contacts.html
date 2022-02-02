@@ -400,6 +400,67 @@
 	</div>
 </section>
 </main>
+<div class="modals">
+	<div class="modal-overlay">
+		
+		<!-- callback  -->
+		<section class="modal decorate-border" data-target="dialog-window-callback">
+			
+			<h3 class="modal__title title title--mod">Заказать звонок</h3>
+			
+			<form class="custom-form" action="">
+				
+				<div class="custom-form__items-wrapper">
+					
+					<p class="custom-form__item">
+						<label for="custom-name">ФИО</label>
+						<input type="text" name="name" id="custom-name">
+					</p>
+					<p class="custom-form__item">
+						<label for="custom-email">E-mail</label>
+						<input type="email" name="email" id="custom-email">
+					</p>
+					<p class="custom-form__item">
+						<label for="custom-text">Ваш комментарий</label>
+						<textarea rows="7" name="text" id="custom-text"></textarea>
+					</p>
+				
+				</div>
+				
+				<div class="g-recaptcha" data-sitekey="">
+					<img src="img/recapcha.jpg" alt="рекапча">
+				</div>
+				
+				<div class="custom-form__footer">
+					<label class="custom-form__label custom-form__label--accept">
+						
+						<input class="visually-hidden" type="checkbox" name="confirm" checked="">
+						
+						<span class="custom-form__politic">Я выражаю свое согласие с <a href="javascript:;">Политикой
+                  конфиденциальности</a> сайта и даю разрешение на обработку своих персональных данных</span>
+					</label>
+				</div>
+					
+					<button class="form__button button button--arrow" type="submit"><span>отправить</span>
+						<svg class="arrow" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 5L16.0002 5M16.0002 5L10.8891 9M16.0002 5L10.8891 1" stroke-width="2"></path>
+							<path class="arrow__tail" d="M0 5L7 5" stroke-width="2"></path>
+						</svg></button>
+			
+			
+			</form>
+			
+			
+			
+			<button class="modal-close button" type="button">
+				<span></span>
+			</button>
+		
+		</section>
+		
+	
+	</div> <!-- .modal-overlay -->
+</div>
 <footer class="footer">
   <div class="wrapper">
     <div class="container">
@@ -447,6 +508,22 @@
     </div>
   </div>
 </footer>
+<script src="libs/SmoothScroll.min.js"></script>
+<script src="libs/swiper-bundle.min.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/modals.js" async></script>
+
+<script>
+	var swiper = new Swiper(".mySwiper", {
+		navigation: {
+			nextEl: ".hero__button-next",
+			prevEl: ".hero__button-prev",
+		},
+		// autoplay: true,
+		loop: true,
+	});
+</script>
 
 </body>
 

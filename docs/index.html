@@ -128,5 +128,21 @@
     </div>
   </div>
 </footer>
+<script src="libs/SmoothScroll.min.js"></script>
+<script src="libs/swiper-bundle.min.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/modals.js" async></script>
+
+<script>
+	var swiper = new Swiper(".mySwiper", {
+		navigation: {
+			nextEl: ".hero__button-next",
+			prevEl: ".hero__button-prev",
+		},
+		// autoplay: true,
+		loop: true,
+	});
+</script>
 </body>
 </html>
