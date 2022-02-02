@@ -111,6 +111,10 @@ logotypeLink.addEventListener('mouseout', function (e) {
   })
 })();
 
+// маска для поля с телефоном
+Inputmask("+7 (999) 999-99-99").mask('[type="tel"]');
+
+
 
 
 
