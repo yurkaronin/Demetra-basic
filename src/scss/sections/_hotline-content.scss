@@ -1,0 +1,15 @@
+.hotline-content {
+  padding: 66px 0 5px;
+
+  @media (max-width: 425px) {
+    padding: 30px 0 5px;
+  }
+}
+
+.hotline-content--mod {
+  padding-bottom: 74px;
+
+  @media (max-width: 425px) {
+    padding-bottom: 30px;
+  }
+}
