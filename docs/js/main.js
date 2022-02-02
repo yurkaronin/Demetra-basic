@@ -87,6 +87,12 @@ logotypeLink.addEventListener('mouseout', function (e) {
   footerLogo.src = 'img/logo-rus--wh.svg';
 });
 
+// кнопка плюс
+
+
+
+
+// аккордеон
 
 
 

@@ -1,11 +1,25 @@
 .prices {
 
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    gap: 32px;
+  }
+
 }
 
 .prices__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  max-width: 1088px;
+  width: 100%;
+}
+
+.prices__item {
+  padding: 33px 0;
 }
 
 .prices__item-name {
@@ -20,5 +34,34 @@
 .prices__item-content {
   border-top: 1px solid #DFDDDC;
   border-bottom: 1px solid #DFDDDC;
-  padding: 23px 0;
+  padding: 0;
+}
+
+.price__navigation {
+  max-width: 158px;
+}
+
+.price__navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  position: sticky;
+  top: 200px;
+}
+
+.price__navigation__link {
+  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 200%;
+  text-align: center;
+  color: #2B1B14;
+
+  &.active {
+    color: #F8AA2B;
+  }
+
 }

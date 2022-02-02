@@ -297,3 +297,102 @@
     display: none;
   }
 }
+
+//кнопка
+.button-plus {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  cursor: pointer;
+  z-index: 100;
+  padding: 0;
+}
+
+.button-plus:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #F8AA2B;
+}
+
+.button-plus:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 2px;
+  background: #F8AA2B;
+}
+
+.button-plus.clicked:before {
+  width: 0;
+}
+
+//кнопка в виде текста
+.button-text {
+  background-color: transparent;
+  border: none;
+  color: #E67A00;
+  font-family: inherit;
+  font-weight: inherit;
+  position: relative;
+  line-height: 111%;
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 4px;
+    background-color: #E67A00;
+    transition: max-width 0.4s;
+  }
+
+}
+
+.button-text.active {
+  color: #E67A00 !important;
+  &:before {
+    width: 100%;
+
+  }
+
+}
+
+
+//круглая кнопка с крестиком и пульсацией
+.button-round {
+  background-color: #fff;
+  font-size: 0;
+  line-height: 0;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/icons/plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: cover;
+    width: 24px;
+    height: 24px;
+
+  }
+}

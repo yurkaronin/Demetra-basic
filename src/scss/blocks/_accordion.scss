@@ -5,7 +5,6 @@
 }
 
 .accordion__item {
-
 }
 
 .accordion__button {
@@ -16,37 +15,38 @@
   justify-content: space-between;
   gap: 32px;
   align-items: center;
+  padding: 23px 0;
 
 }
 
 .accordion__title {
   font-weight: 300;
-  font-size: 32px;
+  font-size: 1.6em;
   line-height: 125%;
   color: #2B1B14;
 }
 .accordion__label {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 0.8em;
   line-height: 100%;
   text-align: center;
   letter-spacing: 0.02em;
   color: #FFFFFF;
   background: #E67A00;
   border-radius: 6px;
-  padding: 8px 15px;
+  padding: 0;
   margin-right: auto;
+  height: 0;
+  overflow: hidden;
 }
 
 .accordion__content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 14px 0 24px;
+  padding: 14px 0;
   border-bottom: 1px solid #DFDDDC;
-
-
-
+  
   .button--small {
     padding: 8px 24px;
 
@@ -70,7 +70,7 @@
 
 .accordion__text {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.2em;
   line-height: 133% ;
   color: #2B1B14;
   margin: 0;
@@ -86,53 +86,12 @@
 
 .accordion__price {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.2em;
   line-height: 100%;
   color: #2B1B14;
 }
 
-
-
-//кнопка
-.button-plus {
-  position: relative;
-  width: 48px;
-  height: 48px;
-  background: transparent;
-  //transform: translate(-50%, -50%) rotate(0deg);
-  cursor: pointer;
-  z-index: 100;
-  //transition: 0.4s cubic-bezier(0.2, 0.6, 0.3, 1.1);
-  padding: 0;
-}
-
-.button-plus:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  //transform: translate(-50%, -50%);
-  height: 2px;
-  width: 100%;
-  background: #F8AA2B;
-}
-
-.button-plus:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  //transform: translate(-50%, -50%);
-  height: 100%;
-  width: 2px;
-  background: #F8AA2B;
-}
-
-.button-plus.clicked {
-  //transform: translate(-50%, -50%) rotate(360deg);
-  //background: #CC2A41;
-}
-
-.button-plus.clicked:before {
-  width: 0;
+.accordion__button.active + .accordion__content {
+  height: auto;
+  padding: 14px 0;
 }
