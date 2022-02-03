@@ -18,6 +18,19 @@
 .custom-price__tabs-item {
   display: flex;
   flex-direction: column;
+  display: none;
+
+  &.red {
+    background-color: tomato;
+  }
+
+  &.green {
+    background-color: green;
+  }
+
+  &.active {
+    display: block;
+  }
 }
 
 .price-navigation {
