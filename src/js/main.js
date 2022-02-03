@@ -37,11 +37,9 @@ if (document.body.classList.contains('home')) {
     if (menuButton.classList.contains('active')) {
       headerLogo.src = 'img/logo-rus.svg';
     } else {
-      if ((document.location.pathname === '/home.html') || (document.location.pathname === '/Demetra-basic/home.html')) {
         headerLogo.src = 'img/logo-rus--wh.svg';
       }
 
-    }
   });
 }
 
