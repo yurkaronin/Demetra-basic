@@ -78,9 +78,9 @@
         <div class="custom-price__header">
           <!-- тут будут табы для переключения вкладок -->
           <p class="title custom-price__tabs-title">
-            <button class="tabs__buttons button-text" type="button" data-tab="#tab-one">Портовые</button>
+            <button class="tabs__buttons button-text active" type="button" data-tab="#tab-one">Портовые</button>
             и
-            <button class="tabs__buttons button-text active" type="button" data-tab="#tab-two" >Линейные</button>
+            <button class="tabs__buttons button-text" type="button" data-tab="#tab-two" >Линейные</button>
             элеваторы
           </p>
         </div>
@@ -90,93 +90,62 @@
           <div class="custom-price__tabs-wrapper">
 
             <!-- вкладка с ценами по группам -->
-            <div class="custom-price__tabs-item red" id="tab-one">
+            <div class="custom-price__tabs-item active" id="tab-one">
               <div class="price-content">
-                <!-- группа - край, округ -->
                 @@include('../templates/price-group.html', {
-                "city": "Краснодарский край"
+                "city": "Контент первого таба",
+                "number": "1"
                 })
 
                 @@include('../templates/price-group.html', {
-                "city": "Воронежская область"
+                "city": "Воронежская область",
+                "id": "2"
                 })
 
                 @@include('../templates/price-group.html', {
-                "city": "Курская область"
+                "city": "Курская область",
+                "id": "3"
                 })
 
                 @@include('../templates/price-group.html', {
-                "city": "Орловская область"
+                "city": "Орловская область",
+                "id": "4"
                 })
 
                 @@include('../templates/price-group.html', {
-                "city": "Рязанская область"
+                "city": "Рязанская область",
+                "id": "5"
                 })
 
-                @@include('../templates/price-group.html', {
-                "city": "Самарская область"
-                })
-
-                @@include('../templates/price-group.html', {
-                "city": "Саратовская область"
-                })
-
-                @@include('../templates/price-group.html', {
-                "city": "Ставропольский край"
-                })
-
-                @@include('../templates/price-group.html', {
-                "city": "Тамбовская область"
-                })
-
-                @@include('../templates/price-group.html', {
-                "city": "Тульская область"
-                })
 
               </div>
             </div>
 
-            <div class="custom-price__tabs-item green" id="tab-two">
+            <div class="custom-price__tabs-item" id="tab-two">
               <div class="price-content">
-                <!-- группа - край, округ -->
                 @@include('../templates/price-group.html', {
-                "city": "Краснодарский край"
+                "city": "Самарская область",
+                "id": "16"
                 })
 
                 @@include('../templates/price-group.html', {
-                "city": "Воронежская область"
+                "city": "Саратовская область",
+                "number": "17"
                 })
 
                 @@include('../templates/price-group.html', {
-                "city": "Курская область"
+                "city": "Ставропольский край",
+                "number": "18"
                 })
 
                 @@include('../templates/price-group.html', {
-                "city": "Орловская область"
+                "city": "Тамбовская область",
+                "number": "19"
                 })
 
                 @@include('../templates/price-group.html', {
-                "city": "Рязанская область"
-                })
-
-                @@include('../templates/price-group.html', {
-                "city": "Самарская область"
-                })
-
-                @@include('../templates/price-group.html', {
-                "city": "Саратовская область"
-                })
-
-                @@include('../templates/price-group.html', {
-                "city": "Ставропольский край"
-                })
-
-                @@include('../templates/price-group.html', {
-                "city": "Тамбовская область"
-                })
-
-                @@include('../templates/price-group.html', {
-                "city": "Тульская область"
+                "city": "Тульская область",
+                "number": "20"
                 })
 
               </div>
@@ -188,13 +157,13 @@
 
           <!-- навигация по алфавиту -->
           <ul class="price-navigation">
-            <li class="price-navigation__item"><a href="#" class="price-navigation__link">Б</a></li>
-            <li class="price-navigation__item"><a href="#" class="price-navigation__link active">В</a></li>
-            <li class="price-navigation__item"><a href="#" class="price-navigation__link">К</a></li>
-            <li class="price-navigation__item"><a href="#" class="price-navigation__link">О</a></li>
-            <li class="price-navigation__item"><a href="#" class="price-navigation__link">Р</a></li>
-            <li class="price-navigation__item"><a href="#" class="price-navigation__link">С</a></li>
-            <li class="price-navigation__item"><a href="#" class="price-navigation__link">Т</a></li>
+            <li class="price-navigation__item"><a href="#1" class="price-navigation__link">Б</a></li>
+            <li class="price-navigation__item"><a href="#2" class="price-navigation__link active">В</a></li>
+            <li class="price-navigation__item"><a href="#3" class="price-navigation__link">К</a></li>
+            <li class="price-navigation__item"><a href="#4" class="price-navigation__link">О</a></li>
+            <li class="price-navigation__item"><a href="#5" class="price-navigation__link">Р</a></li>
+            <li class="price-navigation__item"><a href="#6" class="price-navigation__link">С</a></li>
+            <li class="price-navigation__item"><a href="#7" class="price-navigation__link">Т</a></li>
           </ul>
         </div>
 

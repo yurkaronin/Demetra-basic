@@ -1,5 +1,10 @@
 .custom-price {
   padding: 85px 0 120px;
+
+  .button-text:hover,
+  .button-text:focus {
+    color: #F8AA2B;
+  }
 }
 
 .custom-price__content {
