@@ -1,9 +1,17 @@
 .custom-price {
   padding: 85px 0 120px;
 
+  @media(max-width: 768px) {
+    padding-bottom: 63px;
+  }
+
   .button-text:hover,
   .button-text:focus {
     color: #F8AA2B;
+  }
+  
+  .container {
+    position: relative;
   }
 }
 
@@ -13,11 +21,38 @@
   align-items: flex-start;
   position: relative;
   gap: 32px;
+
+  @media(max-width: 768px) {
+    position: initial;
+  }
+
+  @media(max-width: 425px) {
+    flex-direction: column-reverse;
+    gap: 23px;
+  }
 }
 
 .custom-price__tabs-wrapper {
   max-width: 1136px;
   width: 100%;
+
+  @media(max-width: 768px) {
+    max-width: 568px;
+  }
+}
+
+.custom-price__tabs-title {
+  padding: 0;
+  margin-bottom: 26px;
+
+  @media(max-width: 1440px) {
+    font-size: 2.8em;
+  }
+
+  @media(max-width: 768px) {
+    max-width: 568px;
+    font-size: 2.4em;
+  }
 }
 
 .custom-price__tabs-item {
@@ -25,21 +60,9 @@
   flex-direction: column;
   display: none;
 
-  &.red {
-    background-color: tomato;
-  }
-
-  &.green {
-    background-color: green;
-  }
-
   &.active {
     display: block;
   }
-}
-
-.price-navigation {
-  max-width: 158px;
 }
 
 .custom-price__header {

@@ -11,6 +11,10 @@
   color: #6B3012;
   //border-bottom: 1px solid #DFDDDC;
 
+  @media(max-width: 1440px) {
+    font-size: 1.6em;
+  }
+
 }
 
 .price-content__group {

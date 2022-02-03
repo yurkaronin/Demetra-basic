@@ -7,7 +7,23 @@
     gap: 16px;
     position: sticky;
     top: 130px;
+    max-width: 158px;
+
+  @media(max-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @media(max-width: 425px) {
+    position: initial;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+  }
 }
+
 
 .price-navigation__link {
   font-weight: 700;
@@ -15,6 +31,14 @@
   line-height: 200%;
   text-align: center;
   color: #2B1B14;
+
+  @media(max-width: 425px) {
+    font-size: 1.2em;
+  }
+
+  &:hover {
+    color: #E67A00;
+  }
 
   &.active {
     color: #F8AA2B;

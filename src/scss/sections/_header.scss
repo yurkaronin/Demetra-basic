@@ -120,6 +120,10 @@
     &:hover,
     &:focus {
       color: #F8AA2B;
+
+      @media(max-width: 768px) {
+        color: #2B1B14;
+      }
     }
 
   }
