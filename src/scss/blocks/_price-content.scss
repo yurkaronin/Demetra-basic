@@ -1,5 +1,5 @@
 .price-content {
-
+  margin-bottom: 36px;
 }
 
 .price-content__name {
@@ -9,5 +9,10 @@
   font-size: 48px;
   line-height: 117%;
   color: #6B3012;
+  border-bottom: 1px solid #DFDDDC;
 
+}
+
+.price-content__group {
+  margin-bottom: 33px;
 }

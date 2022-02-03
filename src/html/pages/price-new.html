@@ -86,47 +86,59 @@
         </div>
 
         <div class="custom-price__content">
+          <!-- обёртка для вкладок -->
+          <div class="custom-price__tabs-wrapper">
 
-          <!-- вкладка с ценами по группам -->
-          <div class="custom-price__tabs-item">
-            <div class="price-content">
-              <!-- группа - край, округ -->
-              <div class="price-content__group">
-                <h2 class="price-content__name">Краснодарский край</h2>
-                <!-- подгруппа - отдельно взятый элеватор -->
-                <div class="price-content__elevator custom-accordion">
-                  <button class="custom-accordion__button active">
-                    <span class="custom-accordion__title">НЗТ ООО</span>
-                    <span class="custom-accordion__label">без НДС</span>
+            <!-- вкладка с ценами по группам -->
+            <div class="custom-price__tabs-item">
+              <div class="price-content">
+                <!-- группа - край, округ -->
+                @@include('../templates/price-group.html', {
+                "city": "Краснодарский край"
+                })
 
-                    <div class="button-plus"></div>
-                  </button>
-                  <div class="custom-accordion__content">
+                @@include('../templates/price-group.html', {
+                "city": "Воронежская область"
+                })
 
-                    @@include('../templates/accordion-product-price.html', {
-                    "name": "Пшеница продовольственная 4 кл, протеин не менее 13%",
-                    "price": "16 400"
-                    })
+                @@include('../templates/price-group.html', {
+                "city": "Курская область"
+                })
 
-                    @@include('../templates/accordion-product-price.html', {
-                    "name": "Пшеница продовольственная 4 кл, протеин не менее 13%",
-                    "price": "16 400"
-                    })
+                @@include('../templates/price-group.html', {
+                "city": "Орловская область"
+                })
 
-                    @@include('../templates/accordion-product-price.html', {
-                    "name": "Пшеница продовольственная 4 кл, протеин не менее 13%",
-                    "price": "16 400"
-                    })
+                @@include('../templates/price-group.html', {
+                "city": "Рязанская область"
+                })
 
+                @@include('../templates/price-group.html', {
+                "city": "Самарская область"
+                })
 
-                  </div>
+                @@include('../templates/price-group.html', {
+                "city": "Саратовская область"
+                })
 
-                </div>
+                @@include('../templates/price-group.html', {
+                "city": "Ставропольский край"
+                })
+
+                @@include('../templates/price-group.html', {
+                "city": "Тамбовская область"
+                })
+
+                @@include('../templates/price-group.html', {
+                "city": "Тульская область"
+                })
 
               </div>
-
             </div>
-          </div><!-- .custom-price__list-->
+
+
+
+          </div>
 
           <!-- навигация по алфавиту -->
           <ul class="price-navigation">

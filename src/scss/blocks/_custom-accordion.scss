@@ -1,5 +1,5 @@
 .custom-accordion {
-  border-top: 1px solid #DFDDDC;
+  //border-top: 1px solid #DFDDDC;
   border-bottom: 1px solid #DFDDDC;
 }
 
@@ -44,6 +44,10 @@
   &:last-child {
     padding-bottom: 47px;
     border: none;
+  }
+
+  .button--small {
+    margin-right: 4px;
   }
 }
 

@@ -10,9 +10,14 @@
   gap: 32px;
 }
 
-.custom-price__tabs-item {
+.custom-price__tabs-wrapper {
   max-width: 1136px;
   width: 100%;
+}
+
+.custom-price__tabs-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .price-navigation {
