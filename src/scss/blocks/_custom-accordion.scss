@@ -1,0 +1,83 @@
+.custom-accordion {
+  border-top: 1px solid #DFDDDC;
+  border-bottom: 1px solid #DFDDDC;
+}
+
+.custom-accordion__button {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: center;
+  padding: 23px 0;
+}
+
+.custom-accordion__title {
+  font-weight: 300;
+  font-size: 1.6em;
+  line-height: 125%;
+  color: #2B1B14;
+}
+
+.custom-accordion__label {
+  font-weight: 500;
+  font-size: 0.8em;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  background: #E67A00;
+  border-radius: 6px;
+  padding: 8px 14px;
+  margin-right: auto;
+}
+
+.custom-accordion__details {
+  padding: 14px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #DFDDDC;
+
+  &:last-child {
+    padding-bottom: 47px;
+    border: none;
+  }
+}
+
+
+.custom-accordion__details-top {
+  max-width: 752px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.custom-accordion__text {
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 133%;
+  color: #2B1B14;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.custom-accordion__price {
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 100%;
+  color: #2B1B14;
+}
+
+.custom-accordion__content {
+  height: 0;
+  overflow: hidden;
+}
+
+.active + .custom-accordion__content {
+  height: auto;
+}
+

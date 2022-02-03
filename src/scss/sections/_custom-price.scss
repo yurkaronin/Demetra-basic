@@ -1,0 +1,28 @@
+.custom-price {
+  padding: 85px 0 120px;
+}
+
+.custom-price__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  gap: 32px;
+}
+
+.custom-price__tabs-item {
+  max-width: 1136px;
+  width: 100%;
+}
+
+.price-navigation {
+  max-width: 158px;
+}
+
+.custom-price__header {
+  max-width: 1215px;
+
+  .tabs__title {
+    padding: 0;
+  }
+}

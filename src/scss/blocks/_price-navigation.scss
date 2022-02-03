@@ -1,0 +1,22 @@
+.price-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: sticky;
+    top: 130px;
+}
+
+.price-navigation__link {
+  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 200%;
+  text-align: center;
+  color: #2B1B14;
+
+  &.active {
+    color: #F8AA2B;
+  }
+}
