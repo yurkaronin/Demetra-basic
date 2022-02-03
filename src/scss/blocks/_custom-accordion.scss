@@ -1,6 +1,6 @@
 .custom-accordion {
   //border-top: 1px solid #DFDDDC;
-  border-bottom: 1px solid #DFDDDC;
+
 }
 
 .custom-accordion__button {
@@ -12,6 +12,69 @@
   gap: 32px;
   align-items: center;
   padding: 23px 0;
+  position: relative;
+  border-bottom: 1px solid #DFDDDC;
+  border-top: 1px solid #DFDDDC;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    border-radius: 6px;
+    background-color: transparent;
+
+  }
+
+  &:hover {
+    border-color: transparent;
+
+    &::before {
+      left: -24px;
+      top: -8px;
+      bottom: -8px;
+      right: -24px;
+      border-color: transparent;
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+}
+
+.custom-accordion__button .button-plus {
+  &:before {
+    transition: 0.3s;
+    transform: rotate(0);
+  }
+}
+
+.custom-accordion__button.active {
+  border-color: #DFDDDC;
+  &::before {
+    display: none;
+
+  }
+  .button-plus {
+
+    &:before {
+      transform: rotate(90deg);
+      top: 2%;
+      transition: 0.3s;;
+    }
+  }
+}
+
+.custom-accordion__button.active:hover {
+  border-color: #DFDDDC;
 }
 
 .custom-accordion__title {
