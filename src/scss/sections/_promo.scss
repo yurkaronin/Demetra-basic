@@ -99,16 +99,11 @@
   padding: 98px 45px 85px;
   position: relative;
   flex-grow: 1;
-  //min-height: 296px;
   justify-content: flex-start;
 
   @media (max-width: 1440px) {
     padding: 99px 45px 80px;
   }
-
-  //@media (max-width: 1024px) {
-  //  min-height: 256px;
-  //}
 
   @media (max-width: 768px) {
     justify-content: center;
