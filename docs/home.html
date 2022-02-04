@@ -63,10 +63,10 @@
 
 
   <section class="hero">
-    <div class="mySwiper">
+    <div class="mySwiper swiper">
       <div class="swiper-wrapper">
 
-        <article class="hero__slider-item swiper-slide" style="background-image: url(./img/bg/first-scr-1.jpg);">
+        <article class="hero__slider-item swiper-slide" style="background-image: url(./img/bg/first-scr-1.jpg);" data-item-name="Поставщикам">
           <div class="wrapper">
             <div class="container">
               <div class="hero__slider-top">
@@ -86,7 +86,7 @@
           </div>
         </article>
 
-        <article class="hero__slider-item swiper-slide" style="background-image: url(./img/bg/first-scr-2.jpg);">
+        <article class="hero__slider-item swiper-slide" style="background-image: url(./img/bg/first-scr-2.jpg);" data-item-name="Прайс-листы">
           <div class="wrapper">
             <div class="container">
               <div class="hero__slider-top">
@@ -102,7 +102,7 @@
           </div>
         </article>
 
-        <article class="hero__slider-item swiper-slide" style="background-image: url(./img/bg/first-scr-3.jpg);">
+        <article class="hero__slider-item swiper-slide" style="background-image: url(./img/bg/first-scr-3.jpg);" data-item-name="Авансирование">
           <div class="wrapper">
             <div class="container">
               <div class="hero__slider-top">
@@ -129,7 +129,7 @@
                 <path d="M0 5L16.0002 5M16.0002 5L10.8891 9M16.0002 5L10.8891 1" stroke-width="2"/>
                 <path class="arrow__tail" d="M0 5L7 5" stroke-width="2"/>
               </svg>
-              <span>Прайс-листы</span>
+              <span>Прайс-листы1</span>
             </button>
             <button class="hero__button-next button button--arrow button--next" type="button">
               <span>Авансирование</span>
@@ -396,22 +396,11 @@
 <script src="libs/SmoothScroll.min.js"></script>
 <script src="libs/swiper-bundle.min.js"></script>
 
+<script src="js/hero-slider.js"></script>
 <script src="js/modals.js"></script>
 <script src="js/tabs.js"></script>
 <script src="js/accordion.js"></script>
 <script src="js/main.js"></script>
-
-
-<script>
-	var swiper = new Swiper(".mySwiper", {
-		navigation: {
-			nextEl: ".hero__button-next",
-			prevEl: ".hero__button-prev",
-		},
-		// autoplay: true,
-		loop: true,
-	});
-</script>
 </body>
 
 </html>
