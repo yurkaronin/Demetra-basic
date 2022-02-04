@@ -150,15 +150,14 @@
 }
 
 .hero__link-item:before {
-  content: "";
+  content: "\2192 ";
+  color: #ffffff;
+  font-weight: 700;
   margin-right: 15px;
-  background-image: url(../img/icons/arrow-list-mark.svg);
-  display: block;
-  width: 18px;
-  height: 10px;
-  background-position: center;
-  background-size: contain;
 
+  @media (max-width: 768px) {
+    font-weight: 500;
+  }
 
 }
 
@@ -238,11 +237,6 @@
     display: block;
     margin-top: 12px;
   }
-}
-
-.hero__link-item {
-  display: flex;
-  align-items: center;
 }
 
 //Первый экран БЕЗ слайдера

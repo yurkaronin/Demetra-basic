@@ -27,7 +27,10 @@
   top: 0;
   bottom: 0;
   right: 0;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
   pointer-events: none;
   border-radius: 6px;
 
@@ -195,7 +198,6 @@
 }
 //кнопки слайдера
 .button--prev {
-  text-transform: initial;
   &::before {
     border-color: #ffffff;
     background-color: #ffffff;
@@ -207,7 +209,6 @@
 }
 
 .button--next {
-  text-transform: initial;
   &::before {
     border-color: #ffffff;
     background-color: #ffffff;
