@@ -1,0 +1,70 @@
+.cabiten-tabs {
+  padding-bottom: 80px;
+  .wrapper {}
+
+  .container {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+}
+
+
+
+.cabiten-tabs__navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 250px;
+
+}
+
+.cabiten-tabs__navigation-item {}
+
+.cabiten-tabs__navigation-link {
+  position: relative;
+  font-weight: 300;
+  font-size: 1.6em;
+  line-height: 100%;
+  color: #2B1B14;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: 0.3s linear;
+
+  svg {
+    fill: #2B1B14;
+    transition: 0.3s linear;
+    opacity: 0;
+  }
+
+
+  &:hover {
+    color: #F8AA2B;
+
+    svg {
+      fill: #F8AA2B;
+    }
+  }
+
+  &:active,
+  &.active {
+    color: #E67A00;
+
+    svg {
+      fill: #E67A00;
+      opacity: 1;
+    }
+  }
+
+}
+
+.cabiten-tabs__content {
+  max-width: 864px;
+  width: 100%;
+}

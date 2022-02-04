@@ -5,15 +5,27 @@
   font-weight: 300;
   font-family: "Aeroport", sans-serif;
 
-  .button {}
+  .custom-form__button {
+    min-width: 416px;
+    margin: 0 auto;
 
-  .g-recaptcha {}
+  }
+
+  .custom-form__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 117%;
+    color: #6B3012;
+  }
 }
 
 .custom-form__items-wrapper {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -138,3 +150,14 @@
   color: #E67A00;
   display: flex !important;
 }
+
+.custom-form__item--group {
+  display: flex;
+  gap: 32px;
+
+  .custom-form__item {
+    width: 100%;
+    max-width: calc(50% - 16px);
+  }
+}
+
