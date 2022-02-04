@@ -2,6 +2,7 @@
   background-color: #fff;
   color: #2b1b14;
   padding-top: 33px;
+  //border-bottom: 1px solid #dfdddc;
   position: relative;
   transition: 0.5s;
   width: 100%;
@@ -27,9 +28,14 @@
 }
 
 .header__logo {
+  //transition: 0.3s;
   max-width: 192px;
   position: relative;
   z-index: 11;
+
+  @media (max-width: 1600px) {
+
+  }
 
   @media (max-width: 426px) {
     max-width: 175px;
@@ -128,6 +134,12 @@
 
 }
 
+//.custom-lock .sticky .logo img {
+//  .logo img {
+//    max-width: 192px;
+//  }
+//}
+
 .header__navigation {
   .button--icon span {
     @media (max-width: 425px) {
@@ -145,3 +157,4 @@
     display: none;
   }
 }
+
