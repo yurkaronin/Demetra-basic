@@ -1,6 +1,7 @@
 .promo {
   margin: 0 40px;
   position: relative;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -69,9 +70,7 @@
 .promo__img {
   display: block;
   max-height: 576px;
-  object-fit: cover;
-  //height: 100%;
-  //max-height: 100%;
+  object-fit: none;
   width: 100%;
 
   @media (max-width: 1440px) {
@@ -171,5 +170,42 @@
 .promo .button-round {
   position: absolute;
   top: -31px;
+
+}
+
+.promo__details {
+  &:hover {
+
+    .cbk-phone-second_circle,
+    .cbk-phone-third_circle {
+      border-color: #fff
+    }
+
+    .cbk-phone-circle {
+      background-color: #fff
+    }
+
+    .button-round {
+      &::before {
+        left: -8px;
+        top: -8px;
+        bottom: -8px;
+        right: -8px;
+        border-color: transparent;
+      }
+    
+      &:after {
+        width: 32px;
+        height: 32px;
+        background-image: url(../img/icons/plus-big.svg);
+    
+      }
+    
+    }
+
+  }
+
+  
+
 
 }

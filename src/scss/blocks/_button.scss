@@ -103,9 +103,11 @@
     position: relative;
   }
 }
+
 //личный кабинет
 .button--account {
   text-transform: initial;
+
   &::before {
     background-color: #6B3012;
     border-color: #6B3012;
@@ -129,6 +131,7 @@
 //переключение языка
 .button--lang {
   text-transform: initial;
+
   &::before {
     background-color: #E67A00;
     border-color: #E67A00;
@@ -185,17 +188,19 @@
   }
 
   &:hover {
-      .arrow__tail {
-        transform: translateX(-7px);
-        transition: 0.3s;
-      }
+    .arrow__tail {
+      transform: translateX(-7px);
+      transition: 0.3s;
+    }
 
   }
 
 }
+
 //кнопки слайдера
 .button--prev {
   text-transform: initial;
+
   &::before {
     border-color: #ffffff;
     background-color: #ffffff;
@@ -208,6 +213,7 @@
 
 .button--next {
   text-transform: initial;
+
   &::before {
     border-color: #ffffff;
     background-color: #ffffff;
@@ -285,6 +291,7 @@
     background-color: #6B3012;
     border-color: #6B3012;
   }
+
   span {
     color: #ffffff;
   }
@@ -362,6 +369,7 @@
 
 .button-text.active {
   color: #E67A00 !important;
+
   &:before {
     width: 100%;
 
@@ -390,12 +398,56 @@
     background-image: url(../img/icons/plus.svg);
     background-repeat: no-repeat;
     background-position: center;
-    block-size: cover;
     width: 24px;
     height: 24px;
 
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: all .2s ease-in-out;
+    pointer-events: none;
+    border-radius: 50%;
+
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+
+  .cbk-phone-second_circle,
+  .cbk-phone-third_circle {
+    border-color: transparent 
+  }
+
+  .cbk-phone-circle {
+    background-color: transparent 
+  }
 }
+
+.button-round:hover {
+
+  &::before {
+    left: -8px;
+    top: -8px;
+    bottom: -8px;
+    right: -8px;
+    border-color: transparent;
+  }
+
+  &:after {
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/icons/plus-big.svg);
+
+  }
+
+}
+
+
 
 .button--small {
   transition: 0.3s linear;
