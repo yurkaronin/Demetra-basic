@@ -53,7 +53,7 @@
     right: -20%;
     z-index: 4;
     pointer-events: none;
-    
+
     @media (max-width: 1024px) {
       width: 50%;
       right: 0;
@@ -149,15 +149,20 @@
 
 }
 
-.hero__link-item:before {
-  content: "\2192 ";
-  color: #ffffff;
-  font-weight: 700;
-  margin-right: 15px;
+.hero__link-item {
+  display: flex;
+  align-items: center;
+}
 
-  @media (max-width: 768px) {
-    font-weight: 500;
-  }
+.hero__link-item:before {
+  content: "";
+  color: #ffffff;
+  background-image: url(../img/icons/arrow-list-mark.svg);
+  display: block;
+  width: 18px;
+  height: 10px;
+  background-position: center;
+  background-size: contain;
 
 }
 
@@ -208,6 +213,7 @@
 
   .button--arrow {
     padding: 23px 19px;
+
     .arrow {
       transform: rotate(90deg);
     }
@@ -216,10 +222,10 @@
 }
 
 .hero__label {
-    color: #ffffff;
-    font-size: 0.7em;
-    letter-spacing: 0.02em;
-  }
+  color: #ffffff;
+  font-size: 0.7em;
+  letter-spacing: 0.02em;
+}
 
 .hero__text-part {
   margin: 0;
@@ -244,15 +250,19 @@
   .hero__slider-item {
     flex-direction: column;
   }
+
   .hero__slider-item::before {
     display: none;
   }
+
   .hero__scroll {
     margin-left: auto;
   }
+
   .hero__slider-top {
     margin-bottom: 35px;
   }
+
   .hero__title {
     font-size: 3.6em;
     line-height: 111%;
@@ -269,6 +279,7 @@
       font-size: 1.6em;
     }
   }
+
   .hero__text-part {
     margin-bottom: 56px;
     max-width: 752px;
@@ -277,6 +288,7 @@
   .hero__slider-item .wrapper {
     margin-bottom: auto;
   }
+
   .breadcrumbs {
     margin-bottom: auto;
     padding-top: 95px;
@@ -294,6 +306,7 @@
     }
 
   }
+
   .breadcrumbs__link {
     color: #ffffff;
 
@@ -310,6 +323,7 @@
     font-weight: 700;
     display: block !important;
   }
+
   a[href="mailto:info@dtrading.ru"] {
     font-weight: 700;
     color: #ffffff;
