@@ -5,11 +5,9 @@
   font-weight: 300;
   font-family: "Aeroport", sans-serif;
 
-  .button {
-  }
+  .button {}
 
-  .g-recaptcha {
-  }
+  .g-recaptcha {}
 }
 
 .custom-form__items-wrapper {
@@ -107,7 +105,7 @@
   }
 }
 
-.custom-form__label--accept input[type=checkbox] + .custom-form__politic::before {
+.custom-form__label--accept input[type=checkbox]+.custom-form__politic::before {
   content: "";
   background-image: url(../img/icons/checkbox-off.svg);
   position: absolute;
@@ -120,7 +118,7 @@
   transition: 0.3s
 }
 
-.custom-form__label--accept input[type=checkbox]:checked + .custom-form__politic::before {
+.custom-form__label--accept input[type=checkbox]:checked+.custom-form__politic::before {
   background-image: url(../img/icons/checkbox-on.svg);
   opacity: 1;
   transition: 0.3s
@@ -132,4 +130,11 @@
   align-items: center;
   gap: 32px;
   flex-wrap: wrap;
+}
+
+.custom-form__link {
+  font-size: 0.9em;
+  line-height: 120%;
+  color: #E67A00;
+  display: flex !important;
 }

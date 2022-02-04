@@ -352,9 +352,11 @@
 .form__button {
   width: 100%;
   max-width: 100%;
+
   &:before {
     background-color: #E67A00;
   }
+
   span {
     color: #ffffff;
     font-weight: 500;
@@ -371,4 +373,10 @@
 
 .form__button .arrow {
   stroke: #ffffff;
+}
+
+.modal__botton-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
