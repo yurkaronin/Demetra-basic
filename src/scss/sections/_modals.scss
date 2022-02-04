@@ -45,7 +45,6 @@
   justify-content: center;
   display: none;
   z-index: 1000;
-  white-space: initial;
 
   padding: 37px 32px;
   max-width: 496px;
@@ -57,11 +56,17 @@
   height: 100%;
   top: 0;
   right: 0;
+  overflow: auto;
 
   @media (max-width: 900px) {
     max-width: 90%;
     padding: 29px 24px;
   }
+}
+.modal * {
+  font-size: initial;
+    white-space: initial;
+    line-height: initial;
 }
 
 .modal--free {

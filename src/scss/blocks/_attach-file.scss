@@ -1,0 +1,292 @@
+.attach-file {
+  // overflow: hidden;
+  // border: 1px solid #d9d9de;
+  // padding: 32px;
+  margin-bottom: 24px;
+
+  @media (max-width: 767px) {
+    padding: 24px;
+  }
+}
+
+
+
+
+.attach-file__block {
+  display: flex;
+  align-items: flex-start;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+
+
+
+.attach-file .btn-white {
+  // flex-shrink: 0;
+  // margin-right: 22px;
+  // padding: 10px 14.3px 12px;
+
+  // @media (max-width: 767px) {
+  //   margin-right: 0;
+  //   margin-bottom: 7px;
+  // }
+
+
+}
+
+
+.filepond--drop-label,
+.filepond--browser-yo3yuh3l3,
+.filepond--browser-w1ujbknv7,
+.filepond--data {
+  display: none;
+}
+
+.attach-file .filepond input {
+  display: none;
+}
+
+.attach-file .filepond .filepond--list-scroller {
+  transform: none !important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.attach-file .filepond .filepond--item {
+  position: relative;
+  // padding: 7px 32px 13px 0;
+  transform: none !important;
+  height: auto !important;
+}
+
+.attach-file .filepond .filepond--item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100000000px;
+  height: 1px;
+  background-color: #e5e5eb;
+}
+
+.attach-file .filepond .filepond--item:last-child::before {
+  display: none;
+}
+
+.attach-file .filepond .filepond--label-action {
+  display: none;
+}
+
+.attach-file .filepond fieldset {
+  min-inline-size: inherit;
+  display: flex;
+}
+
+.attach-file .filepond .filepond--file-wrapper:hover .filepond--action-remove-item::before,
+.attach-file .filepond .filepond--file-wrapper:hover .filepond--action-remove-item::after {
+  background-color: #003b83;
+}
+
+.attach-file .filepond .filepond--file div,
+.attach-file .filepond .filepond--file button {
+  display: none;
+}
+
+.attach-file .filepond .filepond--file .filepond--action-remove-item {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  cursor: pointer;
+  transform: translateY(6px) !important;
+
+  @media (max-width: 767px) {
+    transform: translateY(4px) !important;
+  }
+}
+
+
+
+.attach-file .filepond .filepond--file .filepond--action-remove-item::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 1px);
+  top: 0;
+  bottom: 0;
+  background-color: #0050b2;
+  width: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.attach-file .filepond .filepond--file .filepond--action-remove-item::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 1px);
+  top: 0;
+  bottom: 0;
+  background-color: #0050b2;
+  width: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.attach-file .filepond .filepond--file .filepond--action-remove-item svg {
+  display: none;
+}
+
+.attach-file .filepond .filepond--file .filepond--action-remove-item span {
+  display: none;
+}
+
+.attach-file .filepond legend {
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+  float: left;
+  margin-right: 15px;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+
+
+.attach-file .filepond .filepond--assistant {
+  display: none !important;
+}
+
+.attach-file .btn-white__text {
+  text-decoration: none;
+  text-transform: lowercase;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  outline: 0;
+  border: 0;
+  z-index: 10;
+  border-radius: 6px;
+  padding: 20px 19px;
+  gap: 26px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+    border-radius: 6px;
+    border-color: #ffffff;
+    background-color: #6B3012;
+  }
+
+  span {
+    font-family: inherit;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+
+  .arrow {
+    width: 18px;
+    height: 10px;
+    position: relative;
+    z-index: 12;
+    pointer-events: none;
+    overflow: visible;
+    stroke: #ffffff;
+  }
+
+  .arrow__tail {
+    transform: translateX(0);
+    transition: 0.3s;
+    stroke: #ffffff;
+
+  }
+
+
+
+}
+
+.attach-file .btn-white__text:hover {
+
+  &::before {
+    left: -4px;
+    top: -4px;
+    bottom: -4px;
+    right: -4px;
+    border-color: transparent;
+  }
+
+  .arrow__tail {
+    transform: translateX(-7px);
+    transition: 0.3s;
+  }
+
+}
+
+.download-file {
+  display: flex;
+  flex-direction: column;
+}
+
+.filepond--list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.attach-file .filepond fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 16px;
+
+
+}
+
+.attach-file .filepond legend {
+  color: #554943;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: initial;
+}
+
+.filepond--action-remove-item {
+  border: none;
+}
+
+.attach-file .filepond .filepond--file .filepond--action-remove-item::before,
+.attach-file .filepond .filepond--file .filepond--action-remove-item::after {
+  background-color: #F8AA2B;
+}
+
+.attach-file .btn-white {
+  width: 100%;
+  max-width: 100%;
+}
+
+.attach-file .filepond .filepond--item::before {
+  display: none;
+}

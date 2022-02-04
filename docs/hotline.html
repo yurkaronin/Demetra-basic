@@ -167,7 +167,7 @@
 	<div class="modal-overlay">
 
 		<!-- callback  -->
-		<section class="modal decorate-border" data-target="dialog-window-callback">
+		<section class="modal" data-target="dialog-window-callback">
 
 			<h3 class="modal__title title title--mod">Заказать звонок</h3>
 
@@ -222,7 +222,7 @@
 		</section>
 
 		<!-- регистрация  -->
-		<section class="modal decorate-border" data-target="dialog-window-login">
+		<section class="modal" data-target="dialog-window-login">
 
 			<h3 class="modal__title title title--mod">Вход на сайт</h3>
 
@@ -236,7 +236,7 @@
 					</p>
 					<p class="custom-form__item">
 						<label for="custom-user-password">Пароль</label>
-						<input type="email" name="email" id="custom-user-password">
+						<input type="password" name="password" id="custom-user-password">
 					</p>
 					<p class="custom-form__item">
 						<a class="custom-form__link link-decorate" href="#">Восстановить пароль</a>
@@ -260,6 +260,78 @@
 							<path class="arrow__tail" d="M0 5L7 5" stroke-width="2"></path>
 						</svg></button>
 				</div>
+
+			</form>
+
+
+
+			<button class="modal-close button" type="button">
+				<span></span>
+			</button>
+
+		</section>
+
+		<!-- отправить резюме  -->
+		<section class="modal" data-target="dialog-window-summary">
+
+			<h3 class="modal__title title title--mod">Отправить резюме</h3>
+
+			<form class="custom-form" action="">
+
+				<div class="custom-form__items-wrapper">
+
+					<p class="custom-form__item">
+						<label for="custom-name-summary">ФИО</label>
+						<input type="text" name="name" id="custom-name-summary">
+					</p>
+					<p class="custom-form__item">
+						<label for="custom-tel-summary">Телефон</label>
+						<input type="tel " name="tel" id="custom-tel-summary">
+					</p>
+					<p class="custom-form__item">
+						<label for="custom-email-summary">E-mail</label>
+						<input type="email" name="email" id="custom-email-summary">
+					</p>
+						<!-- <label for="custom-file-summary">Загрузить файл</label>
+						<input type="file" name="file" id="custom-file-summary"> -->
+
+						<div class="attach-file">
+							<label class="download-file attach-file__block">
+								<div class="btn-white" type="submit">
+									<span class="btn-white__text">
+										<span>Выберите файл</span>
+									<svg class="arrow" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 5L16.0002 5M16.0002 5L10.8891 9M16.0002 5L10.8891 1" stroke-width="2"></path>
+										<path class="arrow__tail" d="M0 5L7 5" stroke-width="2"></path>
+									</svg></span>
+								</div>
+								<input id="filePush" class="filepond" type="file" multiple>
+								<div class="attach-file__block"></div>
+							</label>
+						</div>
+
+				</div>
+
+				<div class="g-recaptcha" data-sitekey="">
+					<img src="img/recapcha.jpg" alt="рекапча">
+				</div>
+
+				<div class="custom-form__footer">
+					<label class="custom-form__label custom-form__label--accept">
+
+						<input class="visually-hidden" type="checkbox" name="confirm" checked="">
+
+						<span class="custom-form__politic">Я выражаю свое согласие с <a href="javascript:;">Политикой
+								конфиденциальности</a> сайта и даю разрешение на обработку своих персональных данных</span>
+					</label>
+				</div>
+
+				<button class="form__button button button--arrow" type="submit"><span>отправить</span>
+					<svg class="arrow" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0 5L16.0002 5M16.0002 5L10.8891 9M16.0002 5L10.8891 1" stroke-width="2"></path>
+						<path class="arrow__tail" d="M0 5L7 5" stroke-width="2"></path>
+					</svg></button>
+
 
 			</form>
 
@@ -323,7 +395,10 @@
 </footer>
 <script src="libs/SmoothScroll.min.js"></script>
 <script src="libs/swiper-bundle.min.js"></script>
+<script src="libs/filepond.min.js"></script>
+<script src="libs/filepond-plugin-file-encode.js"></script>
 
+<script src="js/file-download.js"></script>
 <script src="js/hero-slider.js"></script>
 <script src="js/modals.js"></script>
 <script src="js/tabs.js"></script>
