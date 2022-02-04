@@ -87,9 +87,11 @@
 
 .content__lead {
   margin-bottom: 32px;
+
   @media (max-width: 425px) {
     margin-bottom: 24px;
   }
+
   p {
     font-size: 1.6em;
     line-height: 125%;
@@ -192,7 +194,6 @@
 
       color: #E67A00;
       display: inline-block;
-      //margin: 0 10px 0 0;
       font-weight: 500;
       font-size: inherit;
       line-height: 140%;
@@ -204,9 +205,11 @@
     margin-left: 0;
     padding-left: 26px;
     margin-bottom: 32px;
+
     li {
       margin-bottom: 10px;
     }
+
     li::marker {
       color: #E67A00;
       display: inline-block;
