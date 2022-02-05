@@ -1,8 +1,25 @@
 .clear-header {
   padding: 45px 0 22px;
 
+  @media (max-width: 900px) {
+    padding-top: 37px;
+    padding-bottom: 64px;
+  }
+
   .title {
     margin-bottom: 22px;
+
+    @media (max-width: 1440px) {
+      font-size: 2.8em;
+    }
+  }
+
+  .breadcrumbs {
+
+    @media (max-width: 900px) {
+      padding: 0;
+    }
+    
   }
 
 }

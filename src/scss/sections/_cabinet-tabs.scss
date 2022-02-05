@@ -1,4 +1,4 @@
-.cabiten-tabs {
+.cabinet-tabs {
   padding-bottom: 80px;
   .wrapper {}
 
@@ -7,26 +7,35 @@
     gap: 32px;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
   }
 
 }
 
 
 
-.cabiten-tabs__navigation {
+.cabinet-tabs__navigation {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 250px;
+  max-width: 22%;
+
+  @media (max-width: 900px) {
+    max-width: 100%;
+    flex-direction: row;
+  }
 
 }
 
-.cabiten-tabs__navigation-item {}
+.cabinet-tabs__navigation-item {}
 
-.cabiten-tabs__navigation-link {
+.cabinet-tabs__navigation-link {
   position: relative;
   font-weight: 300;
   font-size: 1.6em;
@@ -64,7 +73,11 @@
 
 }
 
-.cabiten-tabs__content {
-  max-width: 864px;
+.cabinet-tabs__content {
+  max-width: 66%;
   width: 100%;
+
+  @media (max-width: 900px) {
+    max-width: 100%;
+  }
 }

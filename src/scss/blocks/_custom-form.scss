@@ -18,6 +18,10 @@
     font-size: 48px;
     line-height: 117%;
     color: #6B3012;
+
+    @media (max-width: 1440px) {
+      font-size: 1.6em;
+    }
   }
 }
 
@@ -40,6 +44,10 @@
     padding: 0 4px;
     color: #554943;
     background: #fff;
+
+    @media (max-width: 1440px) {
+      font-size: 0.9em;
+    }
   }
 
   input,
