@@ -459,3 +459,13 @@
     background-color: #6B3012 !important;
   }
 }
+
+.color-3 {
+  span {
+    color: #ffffff;
+  }
+  &:before {
+    background-color: #E67A00 !important;
+  }
+}
+

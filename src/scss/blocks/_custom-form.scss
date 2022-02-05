@@ -169,3 +169,35 @@
   }
 }
 
+.filter-form__label {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 140%;
+  color: #2B1B14;
+  // margin-bottom: 19px;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.filter-form__label input[type="radio"]+.filter-form__label-wrap::before {
+  background-image: url(../img/icons/radiobutton-off.svg);
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.filter-form__label input[type="radio"]:checked+.filter-form__label-wrap::before {
+  background-image: url(../img/icons/radiobutton-on.svg);
+}
+
+.filter-form__label-wrap {
+  display: flex;
+  align-items: center;
+}

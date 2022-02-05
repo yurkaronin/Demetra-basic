@@ -31,9 +31,19 @@
     flex-direction: row;
   }
 
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+
 }
 
-.cabinet-tabs__navigation-item {}
+.cabinet-tabs__tab-details {
+  display: none; 
+
+  &.active {
+    display: block;
+  }
+}
 
 .cabinet-tabs__navigation-link {
   position: relative;
@@ -45,10 +55,12 @@
   align-items: center;
   gap: 16px;
   transition: 0.3s linear;
+  background-color: transparent;
+  border: none;
 
   svg {
     fill: #2B1B14;
-    transition: 0.3s linear;
+    transition: 0.2s linear;
     opacity: 0;
   }
 
@@ -61,13 +73,24 @@
     }
   }
 
-  &:active,
   &.active {
     color: #E67A00;
 
     svg {
       fill: #E67A00;
       opacity: 1;
+    }
+  }
+
+  &.logout {
+    margin-left: 40px;
+
+    @media (max-width: 900px) {
+      margin-left: 0;
+    }
+
+    @media (max-width: 650px) {
+      margin-left: 40px;
     }
   }
 
@@ -80,4 +103,93 @@
   @media (max-width: 900px) {
     max-width: 100%;
   }
+
+  .content {
+    padding-top: 68px;
+    padding-bottom: 30px;
+
+    @media (max-width: 1024px) {
+      padding-top: 32px;
+    }
+  }
+}
+
+.cabinet-tabs .btn-white {
+  max-width: max-content;
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    min-width: initial;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.cabinet-tabs .button,
+.cabinet-tabs .btn-white__text {
+  min-width: 416px;
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    min-width: initial;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+
+.cabinet-tabs__tab-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 117%;
+  color: #6B3012;
+  margin-bottom: 36px;
+
+  @media (max-width: 1440px) {
+    font-size: 1.6em;
+  }
+}
+
+.cabinet-tabs .filepond--root {
+  height: initial;
+  margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.cabinet-tabs .attach-file .filepond fieldset {
+  margin: 0;
+}
+
+.cabinet-tabs .attach-file__block {
+  gap: 16px;
+}
+
+.cabinet-tabs .cabinet-tabs__button {
+  margin-bottom: 32px;
+}
+
+.cabinet-tabs .custom-form__item--group {
+  flex-wrap: wrap;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+
+.cabinet-tabs .custom-form__button {
+  @media (max-width: 1024px) {
+    min-width: initial;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.cabinet-tabs .attach-file .btn-white__text {
+  justify-content: center;
+}
+
+.cabinet-tabs .attach-file .btn-white__text span {
+  line-height: 100%;
 }
