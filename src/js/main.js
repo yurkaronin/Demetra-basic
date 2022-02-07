@@ -21,7 +21,6 @@ window.onscroll = function showHeader() {
 
 // динамическая высота шапки сайта и соответствующий верхний padding в main 
 const headerHeight = header.offsetHeight;
-
 document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`);
 
 // кнопка меню
@@ -92,8 +91,21 @@ logotypeLink.addEventListener('mouseout', function (e) {
 });
 
 
+const anchors = document.querySelectorAll('.ancor');
 
+const test = anchors.getBoundingClientRect();
+console.log(test.top);
 
-
-
+// for (let anchor of anchors) {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault()
+    
+//     const blockID = anchor.getAttribute('href');
+    
+//     document.querySelector(blockID).scrollIntoView({
+//       behavior: 'smooth',
+//       block: 'center'
+//     });
+//   })
+// }
 
