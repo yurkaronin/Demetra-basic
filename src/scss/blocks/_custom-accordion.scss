@@ -33,6 +33,10 @@
     border-radius: 6px;
     background-color: transparent;
 
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
   }
 
   &:hover {
@@ -178,4 +182,3 @@
 .active + .custom-accordion__content {
   height: auto;
 }
-
