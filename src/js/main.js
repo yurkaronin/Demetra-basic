@@ -1,7 +1,8 @@
 "use strict";
+let header = document.querySelector('.header');
 // прилипающая шапка со сменным лого в зависимости от того какая сейчас страница
 window.onscroll = function showHeader() {
-  let header = document.querySelector('.header');
+  
   let headerLogo = document.querySelector('.logo__image');
 
   if (window.pageYOffset > header.offsetHeight) {
@@ -17,6 +18,11 @@ window.onscroll = function showHeader() {
     }
   }
 }
+
+// динамическая высота шапки сайта и соответствующий верхний padding в main 
+const headerHeight = header.offsetHeight;
+
+document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`);
 
 // кнопка меню
 var menuButton = document.querySelector('.button-menu');

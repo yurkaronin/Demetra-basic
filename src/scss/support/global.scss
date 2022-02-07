@@ -31,3 +31,13 @@ a {
   font-family: inherit;
   color: #f8aa2b;
 }
+
+
+.main {
+  --header-height: 63px;
+  padding-top: calc(var(--header-height) + 65px);
+}
+
+.home .main {
+  padding-top: 0;
+}
