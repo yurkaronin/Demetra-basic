@@ -16,8 +16,6 @@
   }
 }
 
-
-// новые стили 
 .content__title {
   color: #6B3012;
   margin: 0;
@@ -136,4 +134,48 @@
     top: -13%;
     left: 2%;
   }
+}
+
+// новые стили 
+.content__list .office-address--mod {
+
+  @media (max-width: 1024px) {
+    max-width: 100%;
+    padding: 24px 32px 32px;
+  }
+
+  @media (max-width: 425px) {
+    max-width: 100%;
+    padding: 24px 32px 32px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .office-address__personal-data {
+    font-size: 1em;
+  }
+
+  a,
+  b {
+    font-weight: 700;
+    display: inline;
+    font-size: inherit;
+  }
+
+  .link {
+    color: #E67A00;
+    font-weight: 300;
+    font-size: inherit;
+  }
+
+  .office-address__status {
+    margin-bottom: 15px;
+  }
+
+  p:nth(:last-element) {
+    margin-bottom: 0;
+  } 
+
 }
