@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+@@include('../templates/head.html', {
+"seo-title": "Ошибка 404. Страница не найдена",
+"seo-desc": "Вы находитесь здесь потому, что запрашиваемая Вами страница не существует. Воспользуйтесь меню или перейдите на главную."
+})
+
+<body class="home page-404">
+@@include('../sections/header.html', {
+"logo-image": "img/logo-rus--wh.svg"
+})
+<main class="main">
+
+
+  <section class="hero hero--no-slider">
+    <article class="hero__slider-item" style="background-image: url(./img/bg/404.jpg);">
+
+      <div class="breadcrumbs wrapper">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="./home.html" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link">Ошибка 404. Страница не найдена</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="container">
+
+          <div class="hero__slider-top">
+            <h2 class="hero__title">Ошибка 404. Страница не найдена</h2>
+          </div>
+
+
+          <p class="hero__text-part">Вы находитесь здесь потому, что запрашиваемая Вами страница не существует. Воспользуйтесь меню или перейдите на главную.</p>
+          <a href="#" class="button"><span>перейти на главную</span></a>
+
+        </div>
+      </div>
+    </article>
+
+    <div class="hero__bottom">
+      <div class="wrapper">
+        <div class="container">
+
+          <div class="hero__scroll">
+
+            <span class="hero__label">Скрольте вниз</span>
+
+            <button class="button button--arrow">
+              <svg class="arrow" width="18" height="10" viewBox="0 0 18 10" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5L16.0002 5M16.0002 5L10.8891 9M16.0002 5L10.8891 1" stroke-width="2"/>
+                <path class="arrow__tail" d="M0 5L7 5" stroke-width="2"/>
+              </svg>
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+@@include('../sections/modals.html')
+@@include('../sections/footer.html')
+
+</body>
+
+</html>

@@ -176,6 +176,14 @@
 
   p:nth(:last-element) {
     margin-bottom: 0;
-  } 
+  }
 
+}
+
+// страница ошибки 404 
+.page-404 {
+  
+  .footer {
+    margin: 0;
+  }
 }
